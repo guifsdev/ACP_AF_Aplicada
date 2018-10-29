@@ -1,6 +1,6 @@
 ### Minha Monografia
-Esta repositório contém a minha monografia apresentada ao curso de Administração da Universidade Federal Fluminense como 
-requisito para obtenção do grau de bacharel.
+Este repositório contém a minha monografia apresentada ao curso de Administração da Universidade Federal Fluminense como 
+requisito para obtenção do grau de bacharel. Seu título é: Variáveis determinantes para formação do conceito preliminar de curso nas avaliações do Enade.
 
 ### Objeto de estudo
 Nesta trabalho analisei dados do Enade 2015 disponibilizados publicamente pelo INEP. O objetivo foi identificar quais são 
