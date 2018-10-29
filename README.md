@@ -29,6 +29,8 @@ Espero que esta pesquisa forneça um incentivo à outros colegas a buscarem info
 prevaleça sobre qualquer iniciativa de plágio. Fico feliz caso utilize este trabalho como uma fonte metodológica de organização.
 Se usar como referência, fico mais feliz ainda. Esta é uma etapa importantíssima da sua vida academica. Muitos insumos valiosos
 estão *in the wild* aguardando um mínimo esforço para se tornarem trabalhos. Use sua criatividade e crie algo impressionante.
+Se seu objetivo é copiar algo daqui, eu não dou a mínima. Mas tenha certeza que seu orientador __vai descobrir__!
 
 ### Texto
-O texto completo pode ser conseguido em [ResearchGate](https://www.researchgate.net/publication/326389471_Variaveis_determinantes_para_formacao_do_conceito_preliminar_de_curso_nas_avaliacoes_do_Enade)
+O texto completo pode ser conseguido em [ResearchGate](https://www.researchgate.net/publication/326389471_Variaveis_determinantes_para_formacao_do_conceito_preliminar_de_curso_nas_avaliacoes_do_Enade). Você tem liberdade
+para sugerir qualquer edição ou incremento. Fique a vontade para entrar em contato comigo em <guilherme_santos@id.uff.br>.
