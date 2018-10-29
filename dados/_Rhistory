@@ -1,0 +1,512 @@
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle="") {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+library(scales)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(DMwR)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle="") {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+get_summary(stats, na.handle = "omit")
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle="") {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+get_summary(stats, na.handle = "omit")
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle) {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+paste("Sumarização estatistica utilizando método de imputação de dados k-NN:")
+get_summary(stats, na.handle = "knn")
+paste("Sumarização estatistica com omissão de dados faltantes:")
+get_summary(stats, na.handle = "omit")
+#### Padronização das variáveis
+@larose2015data [p. 98] nos ensina que a padronização dos dados precede a aplicação da Análise do Componente Principal - ACP (ou _Principal Component Analysis_)
+aplicação d
+View(stats)
+View(cpc)
+cursos.all <- cpc %>%
+select(`Área de Enquadramento`, `Sigla da UF`)
+cursos.sudeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('RJ', 'SP', 'ES', 'MG')) %>%
+mutate(Região = 'Sudeste')
+cursos.sul <- cursos.all %>%
+filter(`Sigla da UF` %in% c('PR', 'SC', 'RS')) %>%
+mutate(Região = 'Sul')
+cursos.centro.oeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MT', 'DF', 'GO', 'MS')) %>%
+mutate(Região = 'Centro Oeste')
+cursos.nordeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MA', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA', 'PI')) %>%
+mutate(Região = 'Nordeste')
+cursos.norte <- cursos.all %>%
+filter(`Sigla da UF` %in% c('AC', 'RO', 'AM', 'PA', 'TO', 'AP', 'RR')) %>%
+mutate(Região = 'Norte')
+joined <- rbind(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+rm(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+get.tbl_cursos_pr <- function(df.in) {
+cursos.por.regiao <- df.in %>%
+group_by(`Área de Enquadramento`, Região) %>%
+summarise(N.Cursos = n())
+nomes.cursos <- levels(as.factor(cursos.por.regiao$`Área de Enquadramento`))
+nomes.areas <- levels(as.factor(cursos.por.regiao$Região))
+df.out <- data.frame()
+for(i in 1:length(nomes.cursos)) {
+v <- c()
+for(j in 1:length(nomes.areas)) {
+tmp <- cursos.por.regiao %>%
+filter(`Área de Enquadramento` == nomes.cursos[i],
+Região == nomes.areas[j])
+v <- c(v, tmp$N.Cursos)
+}
+df.out <- rbind(df.out, v)
+}
+colnames(df.out) <- nomes.areas
+row.names(df.out) <- nomes.cursos
+df.out$Total <- rowSums(df.out[1:5])
+df.out <- df.out[with(df.out, order(-Total)),]
+df.out
+}
+cursos.por.regiao <- get.tbl_cursos_pr(joined)
+rm(cursos.all, joined)
+cursos.por.regiao %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle) {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+get_summary(stats, na.handle = "omit")
+rm(getmode)
+get_summary(stats, na.handle = "omit")
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle) {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+get_summary(stats, na.handle = "omit")
+rm(getmode, get_summary)
+cursos.all <- cpc %>%
+select(`Área de Enquadramento`, `Sigla da UF`)
+cursos.sudeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('RJ', 'SP', 'ES', 'MG')) %>%
+mutate(Região = 'Sudeste')
+cursos.sul <- cursos.all %>%
+filter(`Sigla da UF` %in% c('PR', 'SC', 'RS')) %>%
+mutate(Região = 'Sul')
+cursos.centro.oeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MT', 'DF', 'GO', 'MS')) %>%
+mutate(Região = 'Centro Oeste')
+cursos.nordeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MA', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA', 'PI')) %>%
+mutate(Região = 'Nordeste')
+cursos.norte <- cursos.all %>%
+filter(`Sigla da UF` %in% c('AC', 'RO', 'AM', 'PA', 'TO', 'AP', 'RR')) %>%
+mutate(Região = 'Norte')
+joined <- rbind(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+rm(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+get.tbl_cursos_pr <- function(df.in) {
+cursos.por.regiao <- df.in %>%
+group_by(`Área de Enquadramento`, Região) %>%
+summarise(N.Cursos = n())
+nomes.cursos <- levels(as.factor(cursos.por.regiao$`Área de Enquadramento`))
+nomes.areas <- levels(as.factor(cursos.por.regiao$Região))
+df.out <- data.frame()
+for(i in 1:length(nomes.cursos)) {
+v <- c()
+for(j in 1:length(nomes.areas)) {
+tmp <- cursos.por.regiao %>%
+filter(`Área de Enquadramento` == nomes.cursos[i],
+Região == nomes.areas[j])
+v <- c(v, tmp$N.Cursos)
+}
+df.out <- rbind(df.out, v)
+}
+colnames(df.out) <- nomes.areas
+row.names(df.out) <- nomes.cursos
+df.out$Total <- rowSums(df.out[1:5])
+df.out <- df.out[with(df.out, order(-Total)),]
+df.out
+}
+cursos.por.regiao <- get.tbl_cursos_pr(joined)
+rm(cursos.all, joined, get.tbl_cursos_pr)
+cursos.por.regiao %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+barplot_cpc_faixa <- function(data) {
+t <- as.data.frame(table(data$`CPC Faixa`))
+print(ggplot(t,
+aes(x = Var1,
+y = Freq/sum(Freq))) +
+geom_bar(stat = "identity") +
+xlab("") + ylab("Percentual de cursos") +
+scale_y_continuous(labels = scales::percent) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+t <-t %>%
+mutate(Percentual = percent(Freq/sum(Freq)))
+names(t) <- c("Conceito", "Frequência", "Percentual")
+t %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+barplot_cpc_faixa(cpc)
+rm(barplot_cpc_faixa)
+cat.adm <- cpc %>%
+select(`Categoria Administrativa`)
+cat.adm <- as.data.frame(table(cat.adm))
+print(ggplot(cat.adm,
+aes(x = reorder(cat.adm, -Freq),
+y = Freq/sum(Freq))) +
+geom_bar(stat = "identity") +
+xlab("") + ylab("Percentual de cursos") +
+scale_y_continuous(labels = scales::percent) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+rm(cat.adm)
+cursos.all <- cpc %>%
+select(`Área de Enquadramento`, `Sigla da UF`)
+cursos.sudeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('RJ', 'SP', 'ES', 'MG')) %>%
+mutate(Região = 'Sudeste')
+cursos.sul <- cursos.all %>%
+filter(`Sigla da UF` %in% c('PR', 'SC', 'RS')) %>%
+mutate(Região = 'Sul')
+cursos.centro.oeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MT', 'DF', 'GO', 'MS')) %>%
+mutate(Região = 'Centro Oeste')
+cursos.nordeste <- cursos.all %>%
+filter(`Sigla da UF` %in% c('MA', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA', 'PI')) %>%
+mutate(Região = 'Nordeste')
+cursos.norte <- cursos.all %>%
+filter(`Sigla da UF` %in% c('AC', 'RO', 'AM', 'PA', 'TO', 'AP', 'RR')) %>%
+mutate(Região = 'Norte')
+joined <- rbind(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+rm(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+get.tbl_cursos_pr <- function(df.in) {
+cursos.por.regiao <- df.in %>%
+group_by(`Área de Enquadramento`, Região) %>%
+summarise(N.Cursos = n())
+nomes.cursos <- levels(as.factor(cursos.por.regiao$`Área de Enquadramento`))
+nomes.areas <- levels(as.factor(cursos.por.regiao$Região))
+df.out <- data.frame()
+for(i in 1:length(nomes.cursos)) {
+v <- c()
+for(j in 1:length(nomes.areas)) {
+tmp <- cursos.por.regiao %>%
+filter(`Área de Enquadramento` == nomes.cursos[i],
+Região == nomes.areas[j])
+v <- c(v, tmp$N.Cursos)
+}
+df.out <- rbind(df.out, v)
+}
+colnames(df.out) <- nomes.areas
+row.names(df.out) <- nomes.cursos
+df.out$Total <- rowSums(df.out[1:5])
+df.out <- df.out[with(df.out, order(-Total)),]
+df.out
+}
+cursos.por.regiao <- get.tbl_cursos_pr(joined)
+rm(cursos.all, joined, get.tbl_cursos_pr)
+cursos.por.regiao %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+rm(cursos.por.regiao)
+org.acad <- cpc %>%
+select(`Organização Acadêmica`)
+org.acad <- as.data.frame(table(org.acad))
+print(ggplot(org.acad,
+aes(x = reorder(org.acad, -Freq),
+y = Freq/sum(Freq))) +
+geom_bar(stat = "identity") +
+xlab("") + ylab("Percentual de cursos") +
+scale_y_continuous(labels = scales::percent) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+rm(org.acad)
+get_summary(stats, na.handle = "omit")
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+stats <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle) {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+get_summary(stats, na.handle = "omit")
+rm(getmode, get_summary, stats)
+standz <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+View(standz)
+standz <- knnImputation(as.data.frame(standz))
+View(standz)
+standz <- scale(standz)
+View(standz)
+sd(standz)
+sd(standz$`Concluintes Inscritos`)
+sd(standz$Concluintes Inscritos)
+standz <- as.data.frame(scale(standz))
+sd(standz$Concluintes Inscritos)
+sd(standz$`Concluintes Inscritos`)
+mean(standz$`Concluintes Inscritos`)
+stdz.pdctors <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+stdz.pdctors <- knnImputation(as.data.frame(stdz.pdctors))
+stdz.pdctors <- as.data.frame(scale(stdz.pdctors))
+View(stdz.pdctors)
+pairs(stdz.pdctors)
+pairs(stdz.pdctors)
+for (i in unique(ii)) {
+pairs(stdz.pdctors[, ii %in% i])
+Sys.sleep(2)
+}
+View(stdz.pdctors)
+dim(stdz.pdctors)
+install.packages("pairsD3")
+require("pairsD3")
+shinypairs(stdz.pdctors)
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+getwd()
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+getwd()
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+title: "Relatorio de Pesquisa - Enade 2015"
+author: "Guilherme Souza"
+date: "30 de abril de 2018"
+bibliography: "../versoes/refs.bib"
+csl: "associacao-brasileira-de-normas-tecnicas.csl"
+output: html_document
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+cpc <- readxl::read_excel("bd_cpc_2015.xlsx")
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = '../dados')
+getwd()
+getwd()
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = "../dados")
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+require(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = "../dados")
+getwd()
+setwd("../dados")
+getwd()
+knitr::opts_knit$set(root.dir = "../dados")
+cpc <- readxl::read_excel("bd_cpc_2015.xlsx")
+getwd()

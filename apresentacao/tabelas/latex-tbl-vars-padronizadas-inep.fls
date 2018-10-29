@@ -1,0 +1,9 @@
+PWD /home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/apresentacao/tabelas
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/apresentacao/tabelas/latex-tbl-vars-padronizadas-inep.tex
+OUTPUT /home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/apresentacao/tabelas/latex-tbl-vars-padronizadas-inep.log
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

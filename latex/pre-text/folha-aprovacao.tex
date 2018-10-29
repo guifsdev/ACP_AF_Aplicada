@@ -1,0 +1,33 @@
+%!TEX root = ../main/main.tex
+
+\renewcommand{\folhadeaprovacao}{
+    \begin{center}
+    {\ABNTEXchapterfont\large\imprimirautor}
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+    \imprimirpreambulo
+    \end{minipage}%
+    \vspace*{\fill}
+    \end{center}
+    Banca Examinadora. \imprimirlocal, Julho de 2018:
+    \assinatura{\textbf{\imprimirorientador} \\ Orientador \\ Universidade Federal Fluminense}
+    \assinatura{\textbf{Prof. Dr. Eduardo Camilo da Silva } \\ Universidade Federal Fluminense}
+    \assinatura{\textbf{Prof. Dr. Joel de Lima Pereira Castro Júnior } \\ Universidade Federal Fluminense}
+    \begin{center}
+    \vspace*{0.5cm}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+    \end{center}
+
+}
+
+\newcommand{\imprimirfolhadeaprovacao}{
+\folhadeaprovacao
+}

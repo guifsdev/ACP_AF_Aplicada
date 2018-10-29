@@ -1,0 +1,239 @@
+## Análise do Componente Principal
+
+#### Lista de Abreviações
+
+- **CI**: Concluintes Inscritos;
+- **CP**: Concluintes Participantes
+- **NBFG**: Nota Bruta - FG (Formação Geral)
+- **NBCE**: Nota Bruta - CE (Conhecimentos Específicos)        
+- **NBG**: Nota Bruta - Geral                                       
+- **NCE**: Nota Contínua do Enade                                   
+- **NBODP**: Nota Bruta - Organização Didático-Pedagógica             
+- **NPODP**: Nota Padronizada - Organização Didático-Pedagógica       
+- **NBIIF**: Nota Bruta - Infraestrutura e Instalações Físicas        
+- **NPIIF**: Nota Padronizada - Infraestrutura e Instalações Físicas  
+- **NBOAF**: Nota Bruta - Oportunidades de Ampliação da Formação      
+- **NPOAF**: Nota Padronizada - Oportunidades de Ampliação da Formação
+- **CPNE**: Concluintes Participantes com nota no Enem               
+- **PCPNE**: Percentual de Concluintes participantes com nota no Enem 
+- **NBIDD**: Nota Bruta - IDD                                         
+- **NPIDD**: Nota Padronizada - IDD                                   
+- **ND**: Número de Docentes                                          
+- **NBM**: Nota Bruta - Mestres                                     
+- **NPM**: Nota Padronizada - Mestres                               
+- **NBD**: Nota Bruta - Doutores                                    
+- **NPD**: Nota Padronizada - Doutores                              
+- **NBRT**: Nota Bruta - Regime de Trabalho                          
+- **NPRT**: Nota Padronizada - Regime de Trabalho                    
+- **CPCC**: CPC Contínuo                                             
+- **CPCF**: CPC Faixa
+
+```{r echo=FALSE, warning=FALSE}
+cpc_pca <- cpc %>% 
+    dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>% 
+    dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+
+colnames(cpc_pca) <- c("CI", "CP", "NBFG", "NBCE", "NBG", "NCE", "NBODP", "NPODP", "NBIIF", 
+"NPIIF", "NBOAF", "NPOAF", "CPNE", "PCPNE", "NBIDD", "NPIDD", "ND", 
+"NBM", "NPM", "NBD", "NPD", "NBRT", "NPRT", "CPCC", "CPCF")
+```
+
+#### Padronização das variáveis
+De acordo com @larose2015data [p. 98] a padronização dos dados precede a aplicação da Análise do Componente Principal - ACP (ou _Principal Component Analysis_). Isso fica evidente com base na observação da tabela de sumarização estatística apresentada anteriormente. Nela é possível notar a desproporção nos desvios-padrão. `Concluíntes Inscritos`, por exemplo, tem um desvio 896 vezes maior que `Nota Bruta - Regime de Trabalho`. Ainda de acordo com o mesmo autor, a padronização tem como principal objetivo evitar que a influência de uma variável domine a da outra no espectro de variabilidade.
+
+A padronização dos dados foi feita com a utilização da função `scales` contida na instalação básica do R. Esta função posiciona as variáveis contínuas em uma unidade de escala pela subtração de sua média e divisão pelo desvio padrão (procedimento denominado *z-scoring*). Isso faz torna o desvio padrão das mesmas 1 e a média 0. Em termos matemáticos a padronização pode ser expressa pela seguinte equação:
+
+$$Z_{i}=\dfrac{X_{i}-\mu_{i}}{\sigma_{ii}}$$
+
+Foi observado que o `dataset` do CPC contém, para cada nota bruta, uma nota padronizada. Além disso, segundo @INEP_2017 a metodologia utilizada para produção destas notas é expressa pela seguinte equação:
+
+$$Z_{FGj}=\dfrac{FG_{kj}-\overline{FG}_k}{S_{FGk}}$$
+Onde,
+
+$Z_{FGj}$ é o afastamento padronizado em $FG$ da unidade de observação $j$;
+$FG_{kj}$ é a nota bruta em $FG$ da $j$-ésima unidade de observação da área de avaliação $k$;
+$\overline{FG}_k$ é a média em $FG$ da área de avaliação $k$; e
+$S_{FGk}$ é o desvio-padrão em $FG$ da área de avaliação $k$.
+
+Nesta pesquisa, optou-se por manter tais variáveis no conjunto de preditoras. Esta decisão se foi tomada com base na verificação de  que tal metodologia é aplicada para a composição da respectiva variável. Além do mais, a mesma não necessariamente implica em desvio padrão unitário e média 0 quando a análise é feita sobre a totalidade de observações, como pode ser observado ta tabela abaixo. 
+
+```{r echo=FALSE, warning=FALSE}
+#Prova de que a padronização do CPC não dá média = 0 e sd = 1.
+stats_pdnz <- stats %>% 
+    select(contains("Padronizada"))
+    
+get_summary(stats_pdnz, na.handle = "knn", "tbl-vars-padronizadas-inep")
+rm(getmode, get_summary, stats_pdnz)
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+#Padronização das variávesi pelo scale variáveis preditoras
+stdz.pdctors <- subset(cpc_pca, select = -c(CPCC, CPCF))
+
+stdz.pdctors <- knnImputation(as.data.frame(stdz.pdctors))
+
+stdz.pdctors <- as.data.frame(scale(stdz.pdctors))
+```
+
+#### Matriz de correlação das variáveis preditoras
+
+De acordo com @larose2015data [p. 98] a próxima etapa na Análise do Componente Principal consiste em verificar a existência de correlações entre as 23 variáveis preditoras e, pontanto, a ocorrência de multicolinearidade. Duas variáveis do dataset são de resposta: CPCC refere-se à nota contínua do CPC e CPCF é a nota escalonada. Sendo assim temos um total de 25 variáveis (23 preditoras e 2 de resposta).
+
+A dificuldade em fazer uma matriz de correlação com as variáveis do CPC está em determinar quais das 25 variáveis apresentam correlação umas com as outras. A quantidade de variáveis preditoras é considerável e não é possível afirmar que as mesmas não apresentam correlação entre as mesmas.
+
+Segundo @larose2015data [p. 92], modelar uma relação utilizando um número de variáveis muito grande pode complicar mais do que explicar e viola dois princípios básicos. O primeiro é o da parcimônia segundo o qual é preciso manter a quantidade de variáveis preditoras em uma quantidade mínima de forma que haja facilidade na interpretação. O segundo é a tendência ao _overfittig_ que diz que a generalidade dos resultados pode dificultar a formação de novos resultados com a mudança dos dados de entrada.
+
+Para análise de correlação foi utilizada a matriz correlograma. Nesta matriz as variáveis são dispostas de forma que é possível determinar para cada uma o seu nível de correlação com os seus pares. Isso possibilita a verificação de possíveis ocorrências de multicolinearidade.
+
+```{r echo=FALSE, warning=FALSE, fig.align="center", message=FALSE}
+library(corrplot)
+
+M <- cor(stdz.pdctors)
+pdf("../graficos/latex-graph-matriz-correlacao.pdf", width = 7, height = 5)
+corrplot(M, tl.col = "black", method = "square", type = "upper", order = "hclust", 
+         col = colorRampPalette(c("white","gray","black"))(200))
+dev.off()
+rm(M)
+```
+
+No gráfico acima, a ordenação das variáveis foi feita por hierarquia de correlação, ou seja, da esquerda para direita, iniciando pelas correlações positivas mais significativas. Com base na observação nas intensidades das colorações, podemos verificar alguns trechos de correlações consideráveis especialmente nas variáveis relacionadas às oportunidades de ampliação da formação e infra-estrutura e instalações físicas.
+
+[comment]: <> (Observa-se um maior número de correlações das variáveis preditoras com o par de variáveis resposta CPCC e CPCF. Aliás, as correlações negativas não pequenas e não aparentam ter relevância.)
+
+Na figura abaixo vemos a representação das duas bandas da matriz correlograma. As variáveis assumem ordenamento de acordo com o índice de correlação e são posteriormente são agrupadas em `clusters`.
+
+```{r echo=FALSE, warning=FALSE, fig.align="center", message=FALSE}
+
+M <- cor(stdz.pdctors)
+
+pdf("../graficos/latex-graph-matriz-correlacao2.pdf", width = 7, height = 5)
+corrplot(M, method = "square", tl.col = "black", order = "hclust", addrect = 4, 
+         col = colorRampPalette(c("white","gray","black"))(200))
+dev.off()
+rm(M)
+```
+
+Uma vizualização alternativa das correlações pode ser obtida por meio da função `shinypairs` do pacote `pairsD3`. É possível selecionar interativamente, de forma gradual dentre as variáveis preditoras, as que formarão a matriz de correlações. Com base nessa seleção de variáveis, copia-se da tela do `shiny` o código que permite replicar a matriz com a função `pairs`.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+png("../graficos/latex-graph-pairs.png")
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+```
+
+[comment]: <> (Ariel: Require é algo indelicado. Não se manda um script instalar coisas nas máquinas dos outros! libraries Mas tem de estar no primeiro chunk.)
+
+Devido ao elevado número de preditoras, esta forma de vizualização, apesar de precisa, torna-se prejudicada. Contudo, "o diagrama de matriz e a matriz de correlação são duas formas de olhar para a mesma coisa." [@larose2015data, p. 98] 
+
+#### Aplicação da Análise do Componente Principal
+
+De acordo com @larose2015data [p. 98] a ACP (Análise do Componente Principal) é a ferramenta mais adequada quando são analisadas variáveis multicolineares. Isto é, tenta-se explicar a estrutura de correlações com base em combinações lineares, também chamadas de componentes. A variabilidade total de todas as variáveis pode ser contabilizada por um conjunto de componentes, uma vez que existe a mesma quantidade de informações nos mesmos em relação ao conjunto original.
+
+Em outras palavras, a análise do componente principal procura reduzir a dimensão de um determinado conjunto de características pela criação de um novo conjunto de propriedades representativas devendo, para tanto, contabilizar a maior variância possível.
+
+##### Componentes Principais
+
+De acordo com @larose2015data [p. 95-96] a ACP é uma técnica de análise que se fundamenta em três corolários:
+
+1. Assumindo que cada variável preditora possa ser representada em forma de vetor; que o conjunto dessas variáveis tenha sido padronizado e que a quantidade total de variáveis seja $m$, a variabilidade total do grupo de variáveis é igual a soma de cada vetor individual, que é igual à soma dos _eigenvectors_, que é o total de variáveis preditoras. Desta forma, em termos matemáticos temos que:
+
+$$\sum_{i=1}^m Var(Y_i) = \sum_{i=1}^m Var(Z_i) = \sum_{i=1}^m \lambda_i = m$$
+Onde,
+$Y_i$ é o $i$-ésimo componente principal;
+$Z_i$ é o $i$-ésimo vetor $Z$ (variável preditora pós padronização);
+$\lambda_i$ é o $i$-ésimo _eigenvector_ (definir _eigenvectors_ e _eigenvalues?_) da variável preditora.
+
+2. _Punk_
+3. A proporção de variabilidade total que explica o $i$-ésimo componente principal é a razão entre o $i$-ésimo _eigenvector_ pelo total de variáveis, isto é, $\dfrac{\lambda_i}{m}$.
+
+A tabela a seguir é o resultado da computação e vizualização dos componentes principais das 23 preditoras sendo cada célula o peso de um componente:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#comps <- prcomp(stdz.pdctors[1:23])
+#print(comps)
+
+pcs_pca <- principal(stdz.pdctors[1:23], nfactors = 5, rotate = "none", scores = TRUE)
+pcs_pca$loadings
+```
+
+Por definição o primeiro componente é o mais representativo de todos, ou seja, é a dimensão que contabiliza a maior variabilidade possível de todas as variáveis preditoras. Em outros termos é a dimensão que maximiza a variância.
+
+com base na tabela acima, observa-se no primeiro componente (PC1) que as variáveis NBODP, NBIIF e NBOAF tem os maiores pesos. Isso significa que a organização didático pedagódica, infra-estrutura e instalações e oportunidades de amplicação da formação dos estudantes nos cursos são as variáveis mais representativas deste componente. Além disso o primeiro componente contabiliza aproximadamente 1/4 da variância de todo conjunto de componentes, como pode ser observado na tabela apresentada.
+
+##### Seleção dos Componentes
+
+A seleção dos componentes pode ser feita com base na seleção de um dentre vários critérios. Um deles é o da proporção da variância explicada que relaciona a área de pesquisa e a proporção de variabilidade que se deseja trabalhar. Em áreas como Ciências Sociais por exemplo, 60% da variabilidade é considerada satisfatória dada a imprevisibilidade da natureza do comportamento humano [@larose2015data p. 103]. Sob essa ótica escolheu-se os cinco primeiros componentes, uma vez que os mesmos contabilizam 72,3% de toda a variabilidade. 
+
+A natureza exploratória da pesquisa fornece relativa liberdade em relação a seleção da quantidade de componentes. Pelo critério *Scree Plot*, a partir do quinto componente é possível verificar uma tentencia de estabilização dos pesos, como pode ser observado no gráfico abaixo. Este é o ponto em que se recomenda que seja feita a extração dos componentes.
+
+[comment]: <> (Sob essa ótica escolheu-se os três primeiros componentes, uma vez que os mesmos contabilizam 60,1% de toda a variabilidade. Uma observação pertinente é que pelo critério de _tendência de horizontalização da curva de eigenvalues_ sugere-se a possibilidade de selecionar os cinco primeiros componentes, como pode ser observado no gráfico abaixo. Observa-se que a partir do quinto componente é possível verificar uma tentencia de horizontalização da curva de eigenvalues. Desta, caso fosse utilizado tal critério seria computada 78,7% da variabilidade.)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+pdf("../graficos/latex-graph-scree-plot-pca.pdf", width = 7, height = 5)
+plot(pcs_pca$values, type = "b",
+     main = "Critério de seleção dos componentes",
+     ylab = "Eigenvalues",
+     xlab = "Número do Componente")
+text(x=12, y=1.6, cex=.8,
+     label = "")
+abline(a = 1.46, b=0, lty=3)
+dev.off()
+```
+
+##### Características dos Componentes
+
+Na tabela abixo vemos os pesos atribuídos aos 4 primeiros componentes pela aplicação da ACP:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+loadings <- round(pcs_pca$loadings[,1:4],4)
+    write.csv(loadings, "../tabelas/R.out/tbl-caracteristicas-dos-componentes.csv")
+
+loadings <- loadings %>% 
+    kable("html") %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+loadings
+
+```
+
+De acordo com @larose2015data [p. 107] o peso dos componentes representa a relação do componente com a variável. Para que o peso de um componente tenha significância prática o mesmo deve exceder $\pm.50$ em magnitude. Desta forma, abaixo é apresentada a mesma tabela, mas desta vez foram omitidos os pesos que não atendem esta condição.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+loadings <- as.data.frame(round(pcs_pca$loadings[,1:4],4))
+
+rnames <- rownames(loadings)
+    
+loadings <- loadings %>% 
+    mutate(PC1 = ifelse( (PC1 < .50), "", PC1),
+           PC2 = ifelse( (PC2 < .50), "", PC2),
+           PC3 = ifelse( (PC3 < .50), "", PC3),
+           PC4 = ifelse( (PC4 < .50), "", PC4))
+
+rownames(loadings) <- rnames
+write.csv(loadings, "../tabelas/R.out/tbl-loadings-mq-5.csv")
+
+
+
+loadings <- loadings %>% 
+    kable("html") %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+loadings
+```
+
+Determinados os pesos, é possível agora classificar os componentes principais de acordo com sua composição e pesos nas variáveis:
+
+1. O primeiro componente apresenta pesos significativos nas variáveis  _Organização Didático-pedagógica_, _Infra-estrutura e Instalações_ e _Oportunidades de Ampliação da Formação_. Com base nisto é possível concluir que esse componente apresenta um perfil do que o curso é capaz de entregar ao aluno, que é refletida nas notas que o mesmo atribui no momento da avaliação.
+
+2. No segundo componete observamos uma concentração dos pesos nas variáveis associadas a duas dimensões, alunos e professores. No que se refere aos alunos, pesam mais as notas avaliadas de acordo com o desempenho dos mesmos nas provas nas áreas de _Formação Geral_ e _Conhecimentos Específicos_. Já em relação aos professores tem destaque as variáveis _Quantidade de Mestres_ e _Quantidade de Doutores_ nos cursos.
+
+3. No teceiro componente têm destaque as variáveis _Concluíntes Inscritos_ e _Percentual de Concluíntes Participantes com nota no Enem_. Isso indica que este componente tem um perfil mais voltado a determinar a situação dos alunos no censo bem como a contabilização da participação dos mesmos.
+
+4. Por fim, o quarto componente principal apresenta perfil de composição similar à do terceiro componente, porém com pesos com magnitudes levemente superiores.
+
+Por meio da aplicação da análise do componente principal foi possível identificar características relevantes sobre as variáveis preditoras do CPC. A referida análise também possibilitou o agrupamento destas variáveis em componentes principais. Verificou-se que o primeiro (principal) componente apresenta afinidade com o que o curso e a instituição de ensino dipõem em termos de profissionais (Organização Didático-pedagógica), estrutura (Infra-estrutura e Instalações) e perspectiva do futuro, do ponto de vista do aluno (Oportunidades de Ampliação da Formação). A pontuação nestas variáveis tem origem em avaliação subjetiva do aluno participante do censo. A classificação destas variáveis como constantes no primeiro componente permite-nos afirmar que um maior desempenho nestes quesitos implicará em maior resposta na variável dependente (CPC Contínuo).

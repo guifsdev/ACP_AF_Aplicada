@@ -1,0 +1,512 @@
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+get_summary <- function(df, na.handle, filename = "get_summary_output") {
+if(na.handle == "knn") {
+df <- knnImputation(as.data.frame(df))
+}
+else if(na.handle == "omit") {
+df <- na.omit(df)
+}
+tmp <- do.call(data.frame,
+list(mean = apply(df,2, mean),
+sd = apply(df, 2, sd),
+median = apply(df, 2, median),
+mode = apply(df, 2, getmode),
+min = apply(df, 2, min),
+max = apply(df, 2, max),
+n = apply(df,2, length)))
+tmp <- round(tmp, 4)
+out.name = paste("../tabelas/R.out/", filename, ".csv", sep = "")
+write.csv(tmp, out.name)
+tmp %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+#Prova de que a padronização do CPC não dá média = 0 e sd = 1.
+stats_pdnz <- cpc_pca %>%
+select(contains("Padronizada"))
+get_summary(stats_pdnz, na.handle = "knn", "tbl-vars-padronizadas-inep")
+#Prova de que a padronização do CPC não dá média = 0 e sd = 1.
+stats_pdnz <- cpc_pca %>%
+select(contains("Padronizada"))
+get_summary(stats_pdnz, na.handle = "knn", "tbl-vars-padronizadas-inep")
+stats_pdnz <- cpc_pca
+View(stats_pdnz)
+#Prova de que a padronização do CPC não dá média = 0 e sd = 1.
+stats_pdnz <- stats %>%
+select(contains("Padronizada"))
+get_summary(stats_pdnz, na.handle = "knn", "tbl-vars-padronizadas-inep")
+rm(getmode, get_summary, stats_pdnz)
+M <- cor(stdz.pdctors)
+pdf("../graficos/latex-graph-matriz-correlacao2.pdf", width = 7, height = 5)
+corrplot(M, method = "square", tl.col = "black", order = "hclust", addrect = 4)
+dev.off()
+rm(M)
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+pdf("../graficos/latex-graph-pairs.pdf", width = 7, height = 5)
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+pdf("../graficos/latex-graph-pairs.pdf", width = 7, height = 5)
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+pdf("../graficos/latex-graph-pairs.pdf", width = 8, height = 6)
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+pdf("../graficos/latex-graph-pairs.pdf")
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+png("../graficos/latex-graph-pairs.pdf")
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#shinypairs(stdz.pdctors)
+#pairs(stdz.pdctors[,c(24,17,18,20,22,7,9,11)], panel = panel.smooth)
+png("../graficos/latex-graph-pairs.png")
+pairs(stdz.pdctors[,c(17,18,20,22,7,9,11)], panel = panel.smooth)
+dev.off()
+#comps <- prcomp(stdz.pdctors[1:23])
+#print(comps)
+pcs_pca <- principal(stdz.pdctors[1:23], nfactors = 5, rotate = "none", scores = TRUE)
+pcs_pca$loadings
+plot(pcs_pca$values, type = "b",
+main = "Critério de seleção dos componentes",
+ylab = "Eigenvalues",
+xlab = "Número do Componente")
+text(x=12, y=1.6, cex=.8,
+label = "")
+abline(a = 1.46, b=0, lty=3)
+pdf("../graficos/latex-graph-scree-plot-pca.pdf", width = 7, height = 5)
+plot(pcs_pca$values, type = "b",
+main = "Critério de seleção dos componentes",
+ylab = "Eigenvalues",
+xlab = "Número do Componente")
+text(x=12, y=1.6, cex=.8,
+label = "")
+abline(a = 1.46, b=0, lty=3)
+dev.off()
+loadings <- round(pcs_pca$loadings[,1:4],4) %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+loadings
+loadings <- round(pcs_pca$loadings[,1:4],4) %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+loadings
+write.csv(loadings, "../tabelas/R.out/tbl-caracteristicas-dos-componentes.csv")
+loadings <- round(pcs_pca$loadings[,1:4],4)
+write.csv(loadings, "../tabelas/R.out/tbl-caracteristicas-dos-componentes.csv")
+loadings <- loadings %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+loadings
+loadings <- as.data.frame(round(pcs_pca$loadings[,1:4],4))
+rnames <- rownames(loadings)
+loadings <- loadings %>%
+mutate(PC1 = ifelse( (PC1 < .50), "", PC1),
+PC2 = ifelse( (PC2 < .50), "", PC2),
+PC3 = ifelse( (PC3 < .50), "", PC3),
+PC4 = ifelse( (PC4 < .50), "", PC4))
+rownames(loadings) <- rnames
+loadings <- loadings %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+loadings
+loadings <- as.data.frame(round(pcs_pca$loadings[,1:4],4))
+rnames <- rownames(loadings)
+loadings <- loadings %>%
+mutate(PC1 = ifelse( (PC1 < .50), "", PC1),
+PC2 = ifelse( (PC2 < .50), "", PC2),
+PC3 = ifelse( (PC3 < .50), "", PC3),
+PC4 = ifelse( (PC4 < .50), "", PC4))
+rownames(loadings) <- rnames
+write.csv(loadings, "../tabelas/R.out/tbl-loadings-mq-5.csv")
+loadings <- loadings %>%
+kable("html") %>%
+kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+loadings
+cpc_pca <- cpc %>%
+dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>%
+dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+library(kableExtra)
+library(pairsD3)
+library(psych)
+library(GPArotation)
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html")
+knitr::opts_knit$set(root.dir = "../dados")
+cpc <- readxl::read_excel("bd_cpc_2015.xlsx")
+#cpc <- cpc %>%
+#    filter(`Área de Enquadramento` == "ADMINISTRAÇÃO") %>%
+#    filter(`Categoria Administrativa` == "Privada com fins lucrativos")
+#comps <- prcomp(stdz.pdctors[1:23])
+#print(comps)
+pcs_pca <- principal(stdz.pdctors[1:23], nfactors = 5, rotate = "none", scores = TRUE)
+pcs_pca$loadings
+#comps <- prcomp(stdz.pdctors[1:23])
+#print(comps)
+pcs_pca <- principal(stdz.pdctors[1:23], nfactors = 5, rotate = "none", scores = TRUE)
+pcs_pca$loadings
+cite(leaflet)
+?cite
+citation(leaflet)
+citation('leaflet')
+citation('kableExtra')
+citation('kableExtra')
+citation('tm')
+print(citation('tm'), bibtex=TRUE)
+citation('tm')
+citation('nnet')
+citation('dplyr')
+knitr::opts_chunk$set(echo = TRUE)
+Estatísticas de validação do modelo.
+#Estatísticas de validação do modelo.
+z <- summary(rlm)$coefficients / summary(rlm)$standard.errors
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(kableExtra)
+library(leaflet)
+library(magrittr)
+library(wordcloud)
+library(SnowballC)
+library(tm)
+library(MASS)
+library(nnet)
+library(cowplot)
+olist_classified_public_dataset <- read.csv("dados/olist_classified_public_dataset.csv")
+olist_data <- olist_classified_public_dataset
+kable(head(olist_data[,1:6]), 'latex',
+caption = 'Inspecionando o dataset',
+booktabs = T) %>%
+kable_styling(position = 'center')
+## O status das ordens
+order_status <- olist_data %>%
+dplyr::select(order_status) %>%
+group_by(order_status) %>%
+summarise(count = n()) %>%
+arrange(desc(count)) %>%
+mutate(percent = count/sum(count)) %>%
+as.data.frame()
+#order_status
+kable(order_status, 'latex', booktabs = T,
+caption = 'Status das ordens') %>%
+kable_styling(position = 'center') %>%
+kable_styling(latex_options = 'hold_position')
+ggplot(order_status, aes(x = order_status, y = percent)) +
+geom_histogram(stat = 'identity', color = 'black', fill = 'white') +
+theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5, hjust = 1)) +
+scale_y_continuous(labels = scales::percent) +
+xlab('') + ylab('')
+## O preço das ordens
+order_products_value <- ggplot(olist_data, aes(x = order_products_value)) +
+geom_histogram(color = 'black', fill = 'white') +
+theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5, hjust = 1)) +
+theme(axis.title = element_text(size = 9, face="bold")) +
+xlab('Preço do produto') + ylab('')
+## O preço do frete da ordens
+order_freight_value <- ggplot(olist_data, aes(x = order_freight_value)) +
+geom_histogram(color = 'black', fill = 'white') +
+theme(axis.text.x = element_text(hjust = 1, size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5, hjust = 1)) +
+theme(axis.title = element_text(size = 9, face="bold")) +
+xlab('Preço do frete') + ylab('')
+## Qtd de vendedores que atenderam a uma ordem
+order_sellers_qty <- ggplot(olist_data, aes(x = order_sellers_qty)) +
+geom_histogram(color = 'black', fill = 'white') +
+scale_x_continuous(breaks = scales::pretty_breaks()) +
+theme(axis.text.x = element_text( hjust = 1, size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5, hjust = 1)) +
+theme(axis.title = element_text(size = 9, face="bold")) +
+xlab('Qtd. de vendedores') + ylab('')
+grid.arrange(order_products_value, order_freight_value, order_sellers_qty, ncol=2)
+order_items_qty <- olist_data %>%
+dplyr::select(order_items_qty) %>%
+mutate(order_items_qty = as.factor(order_items_qty)) %>%
+group_by(order_items_qty) %>%
+summarise(count = n()) %>%
+mutate(percent = scales::percent(count / sum(count)))
+#order_items_qty
+kable(order_items_qty, 'latex', booktabs = T,
+caption = 'Total de itens') %>%
+kable_styling(position = 'center') %>%
+kable_styling(latex_options = 'hold_position')
+order_purchase_timestamp <- olist_data %>%
+dplyr::select(order_purchase_timestamp) %>%
+mutate(order_purchase_datetime = lubridate::ymd_hms(order_purchase_timestamp),
+year = lubridate::year(order_purchase_datetime),
+month = lubridate::month(order_purchase_datetime),
+day = lubridate::day(order_purchase_datetime),
+hour = lubridate::hour(order_purchase_datetime)) %>%
+mutate(month = month.abb[month]) %>%
+dplyr::select(-c(1,2))
+## Qty de ordens em cada ano
+year <- order_purchase_timestamp %>%
+dplyr::select(year) %>%
+group_by(year) %>%
+summarise(count = n()) %>%
+mutate(percent = scales::percent(count/sum(count))) %>%
+as.data.frame()
+#year
+kable(year, 'latex', booktabs = T,
+caption = 'Qtd. de ordens em 2017 e 2018') %>%
+kable_styling(position = 'center') %>%
+kable_styling(latex_options = 'hold_position')
+# Qtd de ordens por a cada mês
+month <- ggplot(order_purchase_timestamp, aes(x = month)) +
+geom_histogram(color = 'black', fill = 'white', stat = 'count') +
+scale_x_discrete(limits = month.abb) +
+theme(axis.text.x = element_text(size = 8.5)) +
+theme(axis.text.y = element_text( hjust = 1, size = 8.5)) +
+theme(axis.title.y = element_text(size = 8.5)) +
+xlab('') + ylab('Ordens')
+# Qtd de ordens por a cada dia
+day <- ggplot(order_purchase_timestamp, aes(x = as.factor(day))) +
+geom_histogram(color = 'black', fill = 'white', stat = 'count') +
+theme(axis.text.x = element_text(size = 9)) +
+theme(axis.text.y = element_text(size = 8.5)) +
+theme(axis.title.y = element_text(size = 8.5)) +
+xlab('') + ylab('Ordens')
+grid.arrange(month, day, ncol = 1, nrow = 2)
+## Delay médio por UF entre compra e aprovação do pagamento
+# aprove_order_delay <- olist_data %>%
+#     select(order_purchase_timestamp, order_aproved_at, customer_state) %>%
+#     mutate(order_purchase = lubridate::ymd_hms(order_purchase_timestamp),
+#              order_aprove = lubridate::ymd_hms(order_aproved_at),
+#            delay_in_h = (order_aprove -  order_purchase)/3600) %>%
+#     select(delay_in_h, customer_state)
+# mean_approval_delay <- aprove_order_delay %>%
+#     group_by(customer_state) %>%
+#     summarise(mean_delay = mean(delay_in_h))
+#
+# ggplot(mean_approval_delay, aes(x = customer_state, y = as.numeric(mean_delay))) +
+#     geom_histogram(color = 'black', fill = 'white', stat = 'identity')
+olist_data <- olist_data %>%
+mutate(order_purchase_timestamp = lubridate::ymd_hms(order_purchase_timestamp),
+order_aproved_at = lubridate::ymd_hms(order_aproved_at),
+order_purchase_aprove_delay = round(as.numeric((order_aproved_at -  order_purchase_timestamp)/(60*24)), 3))
+mean_approval_delay <- olist_data %>%
+dplyr::select(order_purchase_aprove_delay, customer_state) %>%
+group_by(customer_state) %>%
+summarise(mean_delay = mean(order_purchase_aprove_delay))
+ggplot(mean_approval_delay, aes(x = customer_state, y = as.numeric(mean_delay))) +
+geom_histogram(color = 'black', fill = 'white', stat = 'identity') +
+theme(axis.text.x = element_text(size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5)) +
+theme(axis.title.y = element_text(size = 8.5)) +
+ylab('Delay médio') + xlab('')
+#Diff between delivery estimated time and true
+# estimated_delivery_error <- olist_data %>%
+#     select(order_aproved_at, order_delivered_customer_date, order_estimated_delivery_date) %>%
+#     mutate(order_aproved_at = format(as.Date(order_aproved_at), "%Y-%m-%d"),
+#            order_delivered_customer_date = format(as.Date(order_delivered_customer_date), "%Y-%m-%d"),
+#            order_estimated_delivery_date = format(as.Date(order_estimated_delivery_date), "%Y-%m-%d"),
+#            delivery_delay = as.Date(order_delivered_customer_date) - as.Date(order_aproved_at),
+#            delivery_estimation_delay = as.Date(order_estimated_delivery_date) - as.Date(order_aproved_at),
+#            error =  delivery_estimation_delay - delivery_delay)
+# ggplot(estimated_delivery_error, aes(x = delivery_estimation_delay, y = error)) +
+#     geom_point()
+olist_data <- olist_data %>%
+mutate(order_aproved_at = format(as.Date(order_aproved_at), "%Y-%m-%d"),
+order_delivered_customer_date = format(as.Date(order_delivered_customer_date), "%Y-%m-%d"),
+order_estimated_delivery_date = format(as.Date(order_estimated_delivery_date), "%Y-%m-%d"),
+delivery_delay = as.Date(order_delivered_customer_date) - as.Date(order_aproved_at),
+delivery_estimation_delay = as.Date(order_estimated_delivery_date) - as.Date(order_aproved_at),
+order_delivery_estimation_delay_error =  delivery_estimation_delay - delivery_delay)
+ggplot(olist_data, aes(x = delivery_estimation_delay, y = order_delivery_estimation_delay_error)) +
+geom_point(cex = .5) +
+xlab('Prazo estimado (dias)') +
+ylab('Erro') +
+theme(axis.title.x = element_text(size = 8.5)) +
+theme(axis.title.y = element_text(size = 8.5)) +
+theme(axis.text.x = element_text(size = 8.5)) +
+theme(axis.text.y = element_text(size = 8.5))
+cities_geocodes <- read_csv('cities_geocodes.csv')
+customer_location <- olist_data %>%
+dplyr::select(customer_city, customer_state) %>%
+group_by(customer_city) %>%
+summarise(count = n()) %>%
+merge(., cities_geocodes, on = 'customer_city')
+## Visualização espacial da frquência de compras
+brazil_map <- leaflet() %>%
+addTiles() %>%
+setView(-55.22, -15.26, zoom = 4) %>%
+addCircleMarkers(data = customer_location, lng = ~lon, lat = ~lat, popup = ~customer_city,
+radius = 3,
+color = "red",
+stroke=FALSE,
+fillOpacity = 0.5)
+#brazil_map
+knitr::include_graphics("brazil_map.png")
+customer_state <- olist_data %>%
+dplyr::select(customer_state) %>%
+group_by(customer_state) %>%
+summarise(count = n()) %>%
+arrange(desc(count)) %>%
+mutate(percent = scales::percent(count/sum(count)))
+#customer_state
+kable(customer_state, 'latex', booktabs = T,
+caption = 'Frequência de ordens por estado') %>%
+kable_styling(position = 'center') %>%
+kable_styling(latex_options = 'hold_position')
+categories <- olist_data %>%
+dplyr::select(product_category_name, most_voted_subclass) %>%
+group_by(product_category_name) %>%
+summarise(count = n()) %>%
+arrange(desc(count)) %>%
+mutate(percent = count/sum(count))
+categories$product_category_name <- factor(categories$product_category_name, levels = categories$product_category_name)
+ggplot(categories, aes(x = product_category_name, y = percent)) +
+geom_histogram(stat = 'identity', color = 'black', fill = 'white') +
+theme(axis.text.x = element_text(angle = 45, size = 7, hjust = 1)) +
+theme(axis.text.y = element_text(size = 8.5)) +
+scale_y_continuous(labels = scales::percent) +
+xlab('') + ylab('')
+#Enjoy yourself discovering the products categories that are more prone to customer insatisfaction.
+categories_unsatisfied <- olist_data %>%
+dplyr::select(product_category_name, most_voted_subclass) %>%
+filter(most_voted_subclass != '')
+categories_unsatisfied <- head(categories,10)
+plot_categories_mvclasses <- function() {
+top_categories <-  as.vector(dplyr::pull(categories[1:10,], product_category_name))
+p <- list()
+for (i in 1:length(top_categories)) {
+category <- olist_data %>%
+dplyr::select(product_category_name, most_voted_subclass) %>%
+filter(product_category_name == top_categories[i]) %>%
+group_by(most_voted_subclass) %>%
+summarise(count = n()) %>%
+arrange(desc(count))
+category$most_voted_subclass <- factor(category$most_voted_subclass, levels = category$most_voted_subclass)
+gg <- ggplot(category, aes(x = most_voted_subclass, y = count)) +
+ggtitle('Categoria: ', subtitle = top_categories[i]) +
+geom_histogram(stat = 'identity', color = 'black', fill = 'white') +
+theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10)) +
+#scale_y_continuous(labels = scales::percent) +
+xlab('') + ylab('')
+#gg
+p[[i]] <- gg
+}
+#do.call('grid.arrange', c(list(p), ncol = 2))
+#do.call('grid.arrange', c(p, ncol = 2))
+plot_grid(plotlist = p)
+}
+#plot_categories_mvclasses()
+#as.data.frame(table(categories_unsatisfied$product_category_name))
+#table(categories_unsatisfied$product_category_name) %>% as.data.frame() %>%
+#    arrange(desc(Freq))
+ad_stats <- olist_data %>%
+dplyr::select(product_name_lenght, product_description_lenght, product_photos_qty, review_score)
+product_name_lenght <- ggplot(ad_stats, aes(x = product_name_lenght)) +
+geom_histogram( color = 'black', fill = 'white') +
+xlab('Tamanho do nome') + ylab('') +
+theme(axis.title = element_text(size = 9, face = 'bold')) +
+theme(axis.text = element_text(size = 8.5))
+product_description_lenght <- ggplot(ad_stats, aes(x = product_description_lenght)) +
+geom_histogram( color = 'black', fill = 'white') +
+xlab('Tamanho da descrição') + ylab('') +
+theme(axis.title = element_text(size = 9, face = 'bold')) +
+theme(axis.text = element_text(size = 8.5))
+product_photos_qty <- ggplot(ad_stats, aes(x = product_photos_qty)) +
+geom_histogram( color = 'black', fill = 'white') +
+xlab('Quantidade de fotos') + ylab('') +
+theme(axis.title = element_text(size = 9, face = 'bold')) +
+theme(axis.text = element_text(size = 8.5))
+review_score <- ggplot(ad_stats, aes(x = review_score)) +
+geom_histogram( color = 'black', fill = 'white') +
+xlab('Review score') + ylab('') +
+theme(axis.title = element_text(size = 9, face = 'bold')) +
+theme(axis.text = element_text(size = 8.5))
+grid.arrange(product_name_lenght, product_description_lenght, product_photos_qty, review_score, ncol = 2)
+# review_answer_delay <- olist_data %>%
+#     select(review_creation_date, review_answer_timestamp) %>%
+#     mutate(review_creation_date = lubridate::ymd_hms(review_creation_date),
+#            review_answer_timestamp = lubridate::ymd_hms(review_answer_timestamp),
+#            delay = as.numeric(review_answer_timestamp - review_creation_date))
+#
+# ggplot(review_answer_delay, aes(x = delay)) +
+#     geom_histogram( color = 'black', fill = 'white')
+olist_data <- olist_data %>%
+mutate(review_creation_date = lubridate::ymd_hms(review_creation_date),
+review_answer_timestamp = lubridate::ymd_hms(review_answer_timestamp),
+review_answer_delay = as.Date(review_answer_timestamp) - as.Date(review_creation_date))
+ggplot(olist_data, aes(x = review_answer_delay)) +
+geom_histogram( color = 'black', fill = 'white') +
+xlab('Dias') + ylab('Frequência') +
+theme(axis.title = element_text(size = 8.5)) +
+theme(axis.text = element_text(size = 8.5))
+review_title_cloud <- olist_data %>%
+dplyr::select(review_comment_message)
+## Calculate Corpus
+review_title_cloud_corpus <- Corpus(VectorSource(review_title_cloud$review_comment_message))
+## Data cleaning and wrangling
+review_title_clean <- tm_map(review_title_cloud_corpus, PlainTextDocument)
+review_title_clean <- tm_map(review_title_cloud_corpus, tolower)
+review_title_clean <- tm_map(review_title_clean, removeNumbers)
+review_title_clean <- tm_map(review_title_clean, removeWords, stopwords("portuguese"))
+review_title_clean <- tm_map(review_title_clean, removePunctuation)
+review_title_clean <- tm_map(review_title_clean, stripWhitespace)
+#review_title_clean <- tm_map(review_title_clean, stemDocument)
+wordcloud(review_title_clean, max.words = 200,random.color = TRUE, random.order=FALSE)
+# Adding some color
+#wordcloud(words = review_title_clean, min.freq = 1,
+#          max.words=250, random.order=FALSE, rot.per=0.35,
+#          colors=brewer.pal(8, "Dark2"))
+olist_data_mod_reg <- olist_data[,c(4:7, 14, 16:19, 24:32, 35:39, 33, 34)]
+olist_data_mod_reg <- olist_data_mod_reg %>%
+mutate(order_delivery_estimation_delay_error =
+as.numeric(order_delivery_estimation_delay_error),
+delivery_delay = as.numeric(delivery_delay),
+delivery_estimation_delay = as.numeric(delivery_estimation_delay),
+review_answer_delay = as.numeric(review_answer_delay))
+str(olist_data_mod_reg)
+library(nnet)
+olist_data_mod_reg <- olist_data_mod_reg %>%
+filter(most_voted_class != '')
+olist_data_mod_reg$most_voted_class2 <- relevel(olist_data_mod_reg$most_voted_class,
+ref = "satisfeito_com_pedido")
+rlm <- multinom(most_voted_class ~ ., data = olist_data_mod_reg[,c(9,18,20,           25)])
+summary(rlm)
+dummy_data <- data.frame(review_score = sample(c(1:5),5),
+votes_satisfied = sample(c(1:6),5),
+delivery_delay = sample(c(1:20),5))
+pred <- predict(rlm, dummy_data, 'probs')
+pred <- as.data.frame(pred) %>%
+cbind(dummy_data)
+pred <- pred[,c(4,5,6,1,2,3)]
+pred
+#Estatísticas de validação do modelo.
+z <- summary(rlm)$coefficients / summary(rlm)$standard.errors
+#z
+p <- (1 - pnorm(abs(z),0,1))*2
+#p
+exp(coef(rlm))
+exp(confint(rlm))
+#Estatísticas de validação do modelo.
+z <- summary(rlm)$coefficients / summary(rlm)$standard.errors
+#z
+p <- (1 - pnorm(abs(z),0,1))*2
+#p
+exp(coef(rlm))
+exp(confint(rlm))
+levels(olist_data$most_voted_class)

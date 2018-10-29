@@ -1,0 +1,72 @@
+## Análise do Fator
+
+Neste trabalho a análise do componente principal apresentou quais variáveis são passíveis de melhor explicarem o que influencia no desempenho de determinado curso no CPC. Foi apresentado o conjunto de variáveis e o perfil de cada componente. Contudo, é oportuno incluir mais uma camada de robustez à pesquisa pela aplicação da Análise do Fator (AF) ou _Factor Analysis_ (FA). @larose2015data [p. 110-111] destaca que, apesar de a ACP e AF serem técnicas de análise multivariada bem similares, a ACP deve ser em essência, um meio para a consecução da AF. 
+
+De acordo com @hair1998multivariate [p. 93] a AF desempenha um papel importante na identificação das interações entre as variáveis por intermédio do agrupamento (em fatores) das mesmas de acordo com seu grau de relação. Esse procedimento permite a redução da dimensionalidade. Isso quer dizer que procura-se descrever um evento utilizando um conjunto menor de variáveis relativamente ao conjunto original estudado com o mínimo de perda de informação.
+
+Vale ressaltar que as conclusões desta pesquisa tem perspectiva exploratória. Procura-se por meio do FA estabelecer uma estrutura nos dados do Enade utilizando este méthodo como técnica de redução. Essa abordagem é diferente da confirmatória pois não são utilizados testes para se chegar a uma estrutura esperada com base em hipóteses [@hair1998multivariate, p. 93].
+
+De acordo com @larose2015data [p. 111] são parâmetros para aplicação da AF: (i) padronização das variáveis; (ii) determinação dos vetores-Z (ou *Z-vectors*) e (iii) a matriz de correlação.
+
+Abaixo vemos a reapresentação da matriz de correlação das variáveis preditoras agrupadas em clusters de acordo com a intensidade de correlação. 
+
+```{r echo=FALSE, warning=FALSE, fig.align="center", message=FALSE}
+library(corrplot)
+
+M <- cor(stdz.pdctors)
+pdf("../graficos/latex-graph-matriz-correlacao.pdf", width = 7, height = 5)
+corrplot(M, tl.col = "black", method = "square", type = "upper", order = "hclust")
+dev.off()
+
+rm(M)
+```
+
+Para que seja empregada de forma correta, a AF requer que as variáveis estejam minimamente correlacionadas. Neste sentido, @larose2015data [p. 112] realiza o teste de *Esfericidade de Bartlett* para determinar se existe um nível mínimo de correlação como fase preliminar à aplicação da AF. Seguindo este autor, o mesmo teste foi realizado nos dados padronizados das variáveis do dataset em questão. O resultado é apresentado abaixo:
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Requires package psych
+corrmat1 <- cor(stdz.pdctors, method = "pearson")
+cortest.bartlett(corrmat1, n = dim(stdz.pdctors)[1])
+```
+
+O teste de Bartlett verifica a *hipótese nula* de que a matriz de correlação é uma matriz identidade, sendo as variáveis portanto não correlacionadas. A principal informação deste teste é o valor de p (ou *p-value*). Valores muito acima de 0.10 indicam que a aplicação do AF pode não ser adequada. Por outro lado valores pequenos indicam que há evidências contra a hipótese nula e portando, validam o método. Como observado na saída acima, o p-value é 0 o que indica que o AF pode ser aplicada.
+
+A seguir são apresentados os dois resultados da aplicação da função `fa` sobre os dados padronizados. O primeiro resultado contém os *eigenvalues* de cada variável preditora computada. O segundo contém os carregamentos (ou *loadings*) juntamente à proporção de variância e variância acumulada.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Requires psych, GPArotation
+fa1 <- fa(stdz.pdctors, nfactors=4, fm = "pa", rotate="none")
+fa1$values # Eigenvalues
+fa1$loadings # Loadings, proportion of variance, and cumulative variance
+```
+Observa-se que os quatro primeiros fatores computam uma variância de 68,4% -- ligeiramente menor quando comparado à variância acumulada da mesma quantidade de componentes principais na fase de aplicação da ACP que foi de 72,3%. É verificado também que, assim como na ACP, o primeiro fator é o que possui a maior variância.
+
+Quanto a seleção de fatores, o mesmo critério foi utilizado em relação à escolha dos componentes na ACP: *Scree plot* [@hair1998multivariate, p. 109]. O gráfico abaixo demonstra que a partir do 4º fator há uma tendência à estabilização em relação à variância explicada pelos fatores individuais.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+pdf("../graficos/latex-graph-fa-scree-plot.pdf", width = 7, height = 5)
+plot(fa1$values, type = "b",
+     main = "Critério de seleção dos Fatores",
+     ylab = "Eigenvalues",
+     xlab = "Número do Fator")
+text(x=12, y=1.6, cex=.8,
+     label = "")
+abline(a = .9, b=0, lty=3)
+
+dev.off()
+```
+
+### Rotação dos Fatores
+
+A rotação dos fatores compreende fase importante da Análise do Fator. De acordo com @hair1998multivariate [p. 112], a rotação serve para redistribuir as proporções de variância residuais dos fatores mais afastados para os iniciais. @larose2015data [p. 114] faz a analogia de um cientista tentando obter maior resolução em uma imagem ao ajustar o foco de seu microscópio. Rotação de fatores pode ser entendido como o esforço para obtenção da melhor configuração de variâncias no plano cartesiano. A tabela abaixo, demonstra a rotação pelo método *Varimax* que procura maximizar a variabilidade para cada coluna. Pela comparação desta tebela com a anterior, percebe-se que obtemos maiores variabilidades após a rotação.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align="center"}
+fa2v <- fa(stdz.pdctors, nfactors = 4, fm = "pa", max.iter = 200, rotate="varimax")
+fa2v$loadings
+```
+
+### Considerações sobre os Fatores
+
+É possível verificar grande semelhança nos resultados das análises multivariadas AF e ACP no que se refere à composição do conjunto de variáveis que representam a redução de dimensionalidade. Por esse motivo, entende-se o caráter corroborativo da AF em relação ao ACP nesta pesquisa. Em termos de perfis de variáveis para cada fator, os mesmos não diferem dos perfis elaborados para ACP.
+
+## Referências

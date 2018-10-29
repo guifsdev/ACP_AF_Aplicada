@@ -1,0 +1,310 @@
+## Análise Exploratória dos Dados
+
+Para elaboração da Análise Exploratória de Dados, na seção "Conhecendo a base de dados" procurou-se primeiramente descrever detalhadamente as variáveis presentes ba base de dados do CPC, especificando nome, classe, além de uma breve definição:
+
+- **Ano**: Categórica. Ano de realização do senso pelo INEP. Neste censo, foram avaliados os cursos em 2015.
+- **Código da IES**: Categórica. Código único de identificação das Instituições de ensino.
+- **Nome da IES**: Categórica. Nome da IES.
+- **Sigla da IES**: Categórica. Sigla da instituição de ensino.
+- **Código do Curso**: Categórica. Código de identificação composto por números inteiros positivos, únicos para cada curso nacionalmente. Varia de 1 a 5001295.
+- **Código da Área**: Categórica. Faz referência ao curso. Cada curso tem um código de área específico. Mesmos cursos em IES's distintas têm o mesmo código. Varia de 1 a 804.
+- **Área de Enquadramento**: Categórica. Nome do curso superior.
+- **Código do Município**: Categórica. Código da cidade onde o curso é ofertado. Varia de 1100023 a 5300108. 756 níveis.
+- **Município do Curso**: Categórica. Nome do município em que se localiza a IES que oferta o curso. 753 níveis.
+- **Sigla da UF**: Categórica. Sigla do estado. 27 níveis.
+- **Organização Acadêmica**: Categórica. As IES podem ter os possíveis 5 (cinco) níveis de enquadramento:
+	- Centro Federal de Educação Tecnológica
+	- Centro Universitário 
+	- Faculdade 
+	- Instituto Federal de Educação, Ciência e Tecnologia 
+	- Universidade 
+- **Categoria Administrativa**: enquadramento organizacional da IES em 10 (dez) níveis:
+	- Pessoa Jurídica de Direito Privado - Com fins lucrativos - Sociedade Civil                 
+	- Pessoa Jurídica de Direito Privado - Com fins lucrativos - Sociedade Mercantil ou Comercial
+	- Pessoa Jurídica de Direito Privado - Sem fins lucrativos - Associação de Utilidade Pública 
+	- Pessoa Jurídica de Direito Privado - Sem fins lucrativos - Fundação                       
+	- Pessoa Jurídica de Direito Privado - Sem fins lucrativos - Sociedade                       
+	- Pessoa Jurídica de Direito Público - Estadual                                              
+	- Pessoa Jurídica de Direito Público - Federal                                               
+	- Pessoa Jurídica de Direito Público - Municipal                                             
+	- Privada com fins lucrativos                                                                
+	- Privada sem fins lucrativos	
+- **Concluintes Inscritos**: Inteira, discreta. Número de estudantes inscritos para realizar a avaliação do Enade.
+- **Concluintes Participantes**: Inteira, discreta. Quantidade de estudantes que efetivamente realizaram a avaliação.
+- **Nota Bruta FG**: Real, contínua. Nota dos alunos na parte de formação geral em escala de 0 a 100.
+- **Nota Bruta - CE**: Real, contínua. Nota dos alunos na parte de conhecimento específico em escala de 0 a 100.
+- **Nota Bruta - Geral**: Real, contínua. Média ponderada envolvendo as notas nas provas de conhecimentos específicos e gerais.
+- **Nota Contínua do Enade**: Real, contínua. Nota atribuída com base no desempenho do estudante na prova do Enade, calculada para cada curso de graduação. Varia de 0 a 5.
+- **Nota Bruta - Organização Didático-Pedagógica**: Real, contínua. Nota média dos alunos nas questões do questionário do estudante referentes à Organização Didático-Pedagógica em escala de 0 a 6.
+- **Nota Padronizada - Organização Didático-Pedagógica**: Real, contínua. nota padronizada dos alunos nas questões do questionário do estudante referentes à Organização Didático-Pedagógica em escala de 0 a 6.
+- **Nota Bruta - Infraestrutura e Instalações Físicas**: Real, contínua. Nota média dos alunos nas questões do questionário do estudante referentes à infraestrutura em escala de 0 a 6.
+- **Nota Padronizada - Infraestrutura e Instalações Físicas**: Real, contínua. Nota padronizada dos alunos nas questões do questionário do estudante referentes à infraestrutura em escala de 0 a 6.
+- **Nota Bruta - Oportunidades de Ampliação da Formação**: Real, contínua. Nota média dos alunos nas questões do questionário do estudante referentes à Oportunidades de ampliação em escala de 0 a 6.
+- **Nota Padronizada - Oportunidades de Ampliação da Formação**: Real, contínua. nota padronizada dos alunos nas questões do questionário do estudante referentes à oportunidades de ampliação em escala de 0 a 6.
+- **Concluintes Participantes com nota no Enem**: Inteira, discreta. Quantidade de estudantes que realizaram o Enem como forma de ingresso nas IES's.
+- **Percentual de Concluintes participantes com nota no Enem**: Real, contínua. Relação entre os concluintes que participaram da avaliação do Enade e os que tiveram nota no Enem.
+- **Nota Bruta - IDD**: Real, contínua. Indicador de diferença de desempenho. Mede o valor agregado pelo processo formativo ao desenvolvimento dos estudantes concluintes oferecido pelo curso. Mensura o valor agregado pelo curso  considerando resultado do Enade e as características dos estudantes ao ingressarem no curso avaliada pela nota do estudante no Enem. Nesta base de dados, variam de -23.6500 a 24.4700.
+- **Nota Padronizada - IDD**: Real, contínua. Indicador de diferença de desempenho após padronização em escala de 0 a 5.
+- **Nr. de Docentes**: Inteira, discreta. Quantidade de professores no curso.
+- **Nota Bruta - Mestres**: Real, contínua. Percentual de mestres do curso de 0 a 100%.
+- **Nota Padronizada - Mestres**: Real, contínua. Nota padronizada atribuída ao percentual de mestres após padronização em escala de 0 a 5.
+- **Nota Bruta - Doutores**: Real, contínua. Percentual de doutores do curso de 0 a 100%.
+- **Nota Padronizada - Doutores**: Real, contínua. Nota padronizada atribuída ao percentual de doutores após padronização em escala de 0 a 5.
+- **Nota Bruta - Regime de Trabalho**: Real, contínua. Percentual de professores com regime integral + parcial do curso de 0 a 100%.
+- **Nota Padronizada - Regime de Trabalho**: Nota padronizada atribuída ao percentual de professores com regime integral + parcial após padronização.
+- **CPC Contínuo**: Real, contínua. Conceito preliminar de curso é a nota atribuída ao curso superior, em escala de 0 a 5.
+- **CPC Faixa**: Inteira, discreta. Variável resposta. Faixa do CPC em escala de 0 a 5.
+
+[comment]: <> (Ariel: Monografia descrever as ok no artigo vamos mais diretos só as que forem efetivas)
+
+Quanto a estrutura da base de dados, e informações pertinentes ao censo
+algumas informações foram extraídas, dentre elas:
+
+**1. Dimensões da base de dados**
+```{r echo=FALSE, results='asis'}
+cat(nrow(cpc), " linhas x ", ncol(cpc), " colunas")
+```
+**2. Dados sobre o censo**
+```{r echo=FALSE, results='asis'}
+paste('Cursos avaliados: ', nrow(cpc))
+paste('IES\'s avaliadas: ', length(levels(as.factor(cpc$`Código da IES`))))
+paste('Municípios com cursos avaliados: ', length(levels(as.factor(cpc$`Município do Curso`))))
+paste('Estados com cursos avaliados: ', length(levels(as.factor(cpc$`Sigla da UF`))))
+paste('Percentual de participação nas provas: ', percent(sum(cpc$`Concluintes Participantes`)/sum(cpc$`Concluintes Inscritos`)))
+```
+**3. Cursos por regiões**
+```{r echo=FALSE, }
+cursos.all <- cpc %>% 
+    select(`Área de Enquadramento`, `Sigla da UF`)
+
+cursos.sudeste <- cursos.all %>% 
+    filter(`Sigla da UF` %in% c('RJ', 'SP', 'ES', 'MG')) %>% 
+    mutate(Região = 'Sudeste')
+
+cursos.sul <- cursos.all %>% 
+    filter(`Sigla da UF` %in% c('PR', 'SC', 'RS')) %>% 
+    mutate(Região = 'Sul')
+    
+cursos.centro.oeste <- cursos.all %>% 
+    filter(`Sigla da UF` %in% c('MT', 'DF', 'GO', 'MS')) %>% 
+    mutate(Região = 'Centro Oeste')
+    
+cursos.nordeste <- cursos.all %>% 
+    filter(`Sigla da UF` %in% c('MA', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA', 'PI')) %>% 
+    mutate(Região = 'Nordeste')
+    
+cursos.norte <- cursos.all %>% 
+    filter(`Sigla da UF` %in% c('AC', 'RO', 'AM', 'PA', 'TO', 'AP', 'RR')) %>% 
+    mutate(Região = 'Norte')
+    
+joined <- rbind(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+rm(cursos.sudeste, cursos.sul, cursos.centro.oeste, cursos.nordeste, cursos.norte)
+
+get.tbl_cursos_pr <- function(df.in) {
+    cursos.por.regiao <- df.in %>% 
+        group_by(`Área de Enquadramento`, Região) %>% 
+        summarise(N.Cursos = n())
+    
+    nomes.cursos <- levels(as.factor(cursos.por.regiao$`Área de Enquadramento`))
+    nomes.areas <- levels(as.factor(cursos.por.regiao$Região))
+
+    df.out <- data.frame()
+    for(i in 1:length(nomes.cursos)) {
+        v <- c()
+        for(j in 1:length(nomes.areas)) {
+            tmp <- cursos.por.regiao %>%
+                filter(`Área de Enquadramento` == nomes.cursos[i],
+                       Região == nomes.areas[j])
+                v <- c(v, tmp$N.Cursos)
+        }
+        df.out <- rbind(df.out, v)
+    }
+    colnames(df.out) <- nomes.areas
+    row.names(df.out) <- nomes.cursos
+
+    df.out$Total <- rowSums(df.out[1:5])
+    
+    df.out <- df.out[with(df.out, order(-Total)),]
+    write.csv(df.out, "../tabelas/R.out/tbl-cursos-por-regiao.csv")
+    
+    df.out
+}
+
+cursos.por.regiao <- get.tbl_cursos_pr(joined)
+rm(cursos.all, joined, get.tbl_cursos_pr)
+cursos.por.regiao %>% 
+    kable("html") %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+rm(cursos.por.regiao)
+```
+**4. Percentual de cursos por Organização Academica**
+```{r echo=FALSE, fig.align='center', }
+org.acad <- cpc %>% 
+    select(`Organização Acadêmica`)
+
+org.acad <- as.data.frame(table(org.acad))
+
+pdf("../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf", width = 7, height = 5)
+print(ggplot(org.acad,
+             aes(x = reorder(org.acad, -Freq),
+                 y = Freq/sum(Freq))) + 
+          geom_bar(stat = "identity") +
+          xlab("") + ylab("Percentual de cursos") +
+          scale_y_continuous(labels = scales::percent) + 
+          theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+dev.off()
+
+rm(org.acad)
+```
+**5. Percentual de cursos por Categoria Administrativa**
+```{r echo=FALSE, fig.align='center', }
+cat.adm <- cpc %>% 
+    select(`Categoria Administrativa`)
+
+cat.adm <- as.data.frame(table(cat.adm))
+pdf("../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf", width = 7, height = 5)
+print(ggplot(cat.adm,
+             aes(x = reorder(cat.adm, -Freq),
+                 y = Freq/sum(Freq))) + 
+          geom_bar(stat = "identity") +
+          xlab("") + ylab("Percentual de cursos") +
+          scale_y_continuous(labels = scales::percent) + 
+          theme(axis.text.x = element_text(angle = 45, hjust = 1)))
+dev.off()
+rm(cat.adm)
+
+```
+**6. IES por categoria administrativa**
+```{r echo=FALSE}
+ies <- cpc %>% 
+    select(`Sigla da IES`, `Código da IES`, `Categoria Administrativa`) %>% 
+    group_by(`Código da IES`, `Sigla da IES`, `Categoria Administrativa`) %>% 
+    summarise(N.Cursos = n())
+
+ies <- as.data.frame(table(ies$`Categoria Administrativa`))
+
+colnames(ies) <- c("Categoria Administrativa", "Total")
+
+ies <- ies[with(ies, order(-Total)),]
+rownames(ies) <- c()
+write.csv(ies, "../tabelas/R.out/tbl-ies-p-cat-adm.csv")
+ies %>% 
+    kable("html") %>% 
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+rm(ies)
+```
+**7. Variável resposta: Conceito Preliminar de Curso**
+
+Sobre a variável resposta `CPC Faixa` foi observado que 12,97% dos cursos não obtiveram notas como é possível ver na tabela a seguir.
+
+```{r echo=FALSE, fig.align='center', results = 'asis'}
+bplot_com.conceito <- function(data) {
+    t <- as.data.frame(table(data$`CPC Faixa`))
+    ncursos <- sum(t$Freq)
+    
+    com.conceito <- t %>% 
+        slice(1:5)
+    
+    pdf("../graficos/latex-graph-cursos-com-conceito.pdf", width = 7, height = 5)
+    print(ggplot(com.conceito,
+                 aes(x = Var1,
+                     y = Freq/ncursos)) + 
+              geom_bar(stat = "identity") +
+              xlab("") + ylab("Percentual de cursos") +
+              scale_y_continuous(labels = scales::percent))
+    dev.off()
+    
+    com.conceito <-com.conceito %>%
+        mutate(Percentual = percent(Freq/ncursos))
+    names(com.conceito) <- c("Conceito", "Frequência", "Percentual")
+    
+    write.csv(com.conceito, "../tabelas/R.out/tbl-cursos-com-conceito.csv")
+    
+    
+    
+    com.conceito %>% 
+        kable("html") %>% 
+        kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+
+info.sem.conceito <- function(data) {
+    t <- as.data.frame(table(data$`CPC Faixa`))
+    ncursos <- sum(t$Freq)
+
+    sem.conceito <- t %>% 
+        slice(6:8)
+    
+   #write.csv(sem.conceito, "../tabelas/R.out/tbl-cursos-sem-conceito.csv")
+    
+    
+    cat("Cursos não reconhecidos: ", sem.conceito$Freq[1], " (", percent(sem.conceito$Freq[1]/ncursos), ");\n",
+        "Cursos sem conceito: ",     sem.conceito$Freq[2], " (", percent(sem.conceito$Freq[2]/ncursos), ");\n",
+        "Cursos sub judice: ",       sem.conceito$Freq[3], " (", percent(sem.conceito$Freq[3]/ncursos), ")", 
+        sep = "")
+}
+
+bplot_com.conceito(cpc)
+info.sem.conceito(cpc)
+
+rm(bplot_com.conceito,info.sem.conceito)
+```
+
+[comment]: <> (Ariel: Neste gráfico só quem tem conceito 1 a 5 Embaixo nota com o número e percentual dos n reconhecidos e sob judice Ou gráfico 1 a 5 Tabela com mais uma devimal. 2 cursos sob Júdice não pode ser zero%.)
+
+
+**8. Análise das variáveis numéricas**
+
+Sabe-se que alguns cursos não obtiveram conceito pelo fato de estarem na condição de não reconhecidos, sem conceito ou sub judice. Foi observado, contudo que tais cursos apesar de estarem com o campo `CPC Faixa` vazios (e portanto sem a principal variável, a de resposta), tiveram notas nas variáveis preditoras. A partir desta constatação foi possível concluir que a utilização dessas observações nas modelagens estatísticas traría prejuízos significativos em termos de precisão.
+
+Com a finalidade de minimizar os efeitos da influência de observações vazias, duas abordagens foram inicialmente estudadas. A primeira consiste em utilizar o método de imputação de dados denominado k-NN (k-Nearest Neighbors algorithm). Este método procura estimar o valor da observação vazia a partir de um parâmetro k que representa a distância deste aos seus k vizinhos mais próximos.
+
+Na segunda abordagem foram omitidas as observações vazias sob a hipótese de que as mesmas estão suficientemente representadas pelas demais observações. Desta forma a criação de um modelo não perderia eficiência nem estaria enviesado. A tabela a seguir contém a sumarização estatı́stica das variáveis preditoras. Nela foi utilizada a técnica de estimação das observações vazias pelo método k-NN. Não foram verificadas diferenças significativas nas medidas estatísticas que implicassem em impossibilidade de estimação pelo método proposto.
+
+Como @josse2016missmda [p. 2] de forma bem elucidativa aborda, manipular bases com dados faltantes utilizando PCA pode ser uma tarefa complicada pela limitação que alguns softwares (como o R) têm em gerar resultados a partir de campos vazios. Segundo esse autor a aplicação do método k-NN pressupõe que as variáveis estejam sob distribuição Gausiana e é seguramente um método de imputação de variáveis contínuas bastante popular [@josse2016missmda, p. 24].
+
+[comment]: <> (É importante lembrar que para aplicação deste método faz-se necessário realizar consulta prévia na literatura sobre o tema e determinar se há respaldo suficiênte para correta aplicação do método.)
+
+**Sumarização estatistica utilizando método de imputação de dados k-NN**
+```{r warning=FALSE, echo=FALSE}
+getmode <- function(v) {
+    uniqv <- unique(v)
+    uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+stats <- cpc %>% 
+    dplyr::select(`Concluintes Inscritos`:`CPC Faixa`) %>% 
+    dplyr::mutate(`CPC Faixa` = as.numeric(`CPC Faixa`))
+#knn
+
+get_summary <- function(df, na.handle, filename = "get_summary_output") {
+    if(na.handle == "knn") {
+        df <- knnImputation(as.data.frame(df))
+    }
+    else if(na.handle == "omit") {
+        df <- na.omit(df)
+    }
+    tmp <- do.call(data.frame, 
+                   list(mean = apply(df,2, mean),
+                        sd = apply(df, 2, sd),
+                        median = apply(df, 2, median),
+                        mode = apply(df, 2, getmode),
+                        min = apply(df, 2, min),
+                        max = apply(df, 2, max),
+                        n = apply(df,2, length)))
+    
+    tmp <- round(tmp, 4)
+    out.name = paste("../tabelas/R.out/", filename, ".csv", sep = "")
+    write.csv(tmp, out.name)
+    
+    
+    tmp %>% 
+        kable("html") %>% 
+        kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+get_summary(stats, na.handle = "knn")
+```
+
+[comment]: <> (**Sumarização estatistica com omissão de dados faltantes**)
+```{r warning=FALSE, echo=FALSE}
+#get_summary(stats, na.handle = "omit")
+```

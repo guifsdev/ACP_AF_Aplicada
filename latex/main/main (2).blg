@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: ../refs.bib.bib
+Repeated entry---line 89 of file ../refs.bib.bib
+ : @article{Brito_Regina_2008
+ :                           , title={O SINAES e o ENADE: da concepção à implantação}, volume={13}, ISSN={1414-4077}, url={http://www.redalyc.org/resumen.oa?id=219114874014}, number={3}, journal={Avaliação: Revista da Avaliação da Educação Superior}, author={Brito, F. de and Regina, Márcia}, year={2008}}
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 23 entries,
+            6714 wiz_defined-function locations,
+            1335 strings with 13912 characters,
+and the built_in function-call counts, 32191 in all, are:
+= -- 3783
+> -- 626
+< -- 841
++ -- 1095
+- -- 191
+* -- 1996
+:= -- 4050
+add.period$ -- 89
+call.type$ -- 23
+change.case$ -- 219
+chr.to.int$ -- 41
+cite$ -- 22
+duplicate$ -- 3229
+empty$ -- 1199
+format.name$ -- 904
+if$ -- 6370
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 392
+newline$ -- 125
+num.names$ -- 110
+pop$ -- 538
+preamble$ -- 1
+purify$ -- 87
+quote$ -- 0
+skip$ -- 3324
+stack$ -- 1
+substring$ -- 1269
+swap$ -- 1143
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 0
+while$ -- 148
+width$ -- 0
+write$ -- 347
+(There was 1 error message)

@@ -1,0 +1,87 @@
+---
+title: "Relatorio de Pesquisa - Enade 2015"
+author: "Guilherme Souza"
+date: "30 de abril de 2018"
+bibliography: "../latex/refs.bib"
+csl: "associacao-brasileira-de-normas-tecnicas.csl"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(scales)
+library(tidyverse)
+library(knitr)
+library(DMwR)
+library(kableExtra)
+library(pairsD3)
+library(psych)
+library(GPArotation)
+
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "html") 
+knitr::opts_knit$set(root.dir = "../dados")
+```
+
+```{r echo=FALSE}
+cpc <- readxl::read_excel("bd_cpc_2015.xlsx")
+#cpc <- cpc %>% 
+#    filter(`Área de Enquadramento` == "ADMINISTRAÇÃO") %>% 
+#    filter(`Categoria Administrativa` == "Privada com fins lucrativos")
+```
+
+## Objetivo
+
+O presente relatório tem como objetivo apresentar um resumo do que vem sendo feito na elaboração da pesquisa envolvendo os dados do censo do Enade 2015. O objetivo é analisar os principais fatores que determinam a qualidade dos cursos de Administração. A criação deste relatório tem como objetivo facilitar a visualização das saídas do R apresentando-as em HTML para posterior apreciação pelo orientador e inclusão no artigo. Por esse motivo nada aqui é definitivo.
+
+## Estrutura da pesquisa
+
+A pesquisa que dá origem a este relatório está estruturada da seguinte forma:
+
+1. Resumo
+2. Introdução
+3. Mensuração da eficiência de um curso superior
+4. Metodologia
+5. Resultados
+6. Discussão
+
+## Fase atual
+
+A pesquisa se encontra na fase de **metodologia** que tem a seguinte estrutura de tópicos:
+
+1. Breve histórico sobre o Enade
+2. Classificação da Pesquisa
+3. Ferramenta: R
+4. Técnicas de análise de dados
+    - Análise Exploratória de Dados
+        - Conhecendo a base de dados
+        - Variável de resposta: Conceito Preliminar de Curso
+        - Análise dos componentes numéricos
+    - Análise do Componente Principal
+        - Lista de breviações
+        - Padronização das ariáveis
+        - Matriz de correlação das variávies preditoras
+        - Aplicação da Análise do componente principal
+            - Componentes principais
+            - Seleção dos componentes
+            - Características dos componentes
+    - Análise Fatorial
+        - Rotação dos Fatores
+        - Considerações sobre os Fatores
+
+Neste relatório será distrinchado o quarto item que abrange as técnicas utilizada para estudo da base de dados e determinação dos componentes que são mais importantes na avaliação dos um cursos superiores.
+
+```{r child='eda.Rmd'}
+```
+
+```{r child='pca.Rmd'}
+```
+
+```{r child='fa.Rmd'}
+```
+
+
+
+
+
+
+

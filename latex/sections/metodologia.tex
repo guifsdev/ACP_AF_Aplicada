@@ -1,0 +1,23 @@
+%!TEX root = ../main/main.tex
+\section{METODOLOGIA}
+%Guilherme você misturou a metodologia com a discussão de resultados. sugiro separar na metodologia vem a receita ingredientes - >dados de onde vem e qual a moldura limitação e os processos =métodos que serão utilizados porque e o que se espera como resultados ao utilizar. A discussão é o que você fez no Cap 4. só tomar cuidado com redundância
+
+Explicar a qualidade de cursos superiores compreende uma tarefa complexa que pode ser objeto de várias abordagens e modelagens matemáticas distintas. 
+Verificou-se na literatura relacionada ao tema trabalhado -- e em especial no trabalho de \citeonline{Coelho_2016}, que a análise sobre a qualidade do Enade como indicador se dá pela aplicação da técnica de Análise Envoltória de dados (\textit{Data Envelopment Analysis} - DEA), que se destina a encontrar as melhores práticas em uma amostra de organizações pertencentes a um conjunto de unidades comparáveis (\textit{Decision Making Units} - DMU).
+
+Em resumo, esta técnica baseia-se na identificação de variáveis de entrada (\textit{input}) e saída (\textit{output}) que implicam na eficiência das unidades de decisão. As inferências são realizadas de modo a se determinar a proporção de diminuição (ou aumento) de uma determinada variável de entrada (ou saída) a fim de tornar uma DMU eficiente.
+
+\subsection{Classificação da Pesquisa}
+A presente pesquisa é qualitativa uma vez que almeja fornecer um entendimento objetivo sobre a metodologia de avaliação de cursos pelo INEP por intermédio da interpretação das narrativas dos autores utilizados como fundamentação. Por outro lado, este trabalho é também quantitativo, uma vez que a motivação principal é entender os indicadores por meio de informações numéricas. Portanto a investigação  qualitativa é complementada com a técnica de \textit{mineração dos dados} do censo dos cursos superiores, aliada ao uso de metodologia estatística sobre os mesmos.
+
+\subsection{Ferramenta e Técnicas de análise de dados}
+Para manipulação dos dados foi utilizado R. Trata-se de uma linguagem e um ambiente para computação estatística e criação de gráficos similar a linguagem \textit{S} desenvolvida pelo \textit{Bell Labs}. É uma aplicação livre e de código aberto sob a licença GNU/GPL \textit{(General Public License)} composta por uma extensa variedade de pacotes utilizados para as mais diferentes finalidades. O R é mantido por uma comunidade global de desenvolvedores e possui uma expressiva aceitação em pesquisas.
+
+A crescente utilização deste ambiente de programação em substituição a outras soluções comerciais como \textit{Microsoft Excel}, \textit{IBM SPSS}, \textit{Sata} e \textit{Minitab} se deve a sua facilidade de uso e a possibilidade de aplicação em diversas áreas relacionadas à análise de dados. A opção por este ambiente se justifica pelo fato de o mesmo ser uma ferramenta gratuita e conter todos os recursos necessários às fases que compõem a aplicação da metodologia deste trabalho.
+
+%\subsection{Técnicas de análise de dados}
+Esta pesquisa utilizou um conjunto de três técnicas estatísticas destinadas à preparação e análise de dados. São elas: Análise Exploratória de Dados (AED), Análise do Componente Principal (ACP) e Análise Fatorial. Uma breve descrição relativa a cada uma delas será apresentada nas subseções a seguir.
+
+\input{eda}
+\input{pca}
+\input{fa}

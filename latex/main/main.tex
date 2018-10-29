@@ -1,0 +1,56 @@
+\documentclass[article,oneside, 12pt]{abntex2}
+
+\input{settings/packages}
+\input{settings/preferences}
+
+\input{../pre-text/dados-capa}
+\input{../pre-text/folha-aprovacao}
+\input{../pre-text/agradecimentos}
+\input{../pre-text/listas}
+\input{../pre-text/ficha-catalografica}
+
+
+\begin{document}
+
+%capa modelo uff
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt] at (current page.center) {
+        \includegraphics[width=\paperwidth]{images/arte-uff-capa.pdf}
+    };
+\end{tikzpicture}
+
+%pré-textual
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\imprimirfichacatalografica
+
+\imprimirfolhadeaprovacao
+
+\imprimiragradecimentos
+
+\imprimirlistadefiguras
+
+\imprimirlistadetabelas
+
+\imprimirsumario  
+
+%miolo
+\textual
+\pagestyle{simple}
+
+\import{../sections/}{resumo}
+\import{../sections/}{lista-abreviaturas}
+\import{../sections/}{introducao}
+\import{../sections/}{avaliacao-brasil}
+\import{../sections/}{avaliacao-mundo}
+%\import{../sections/}{mensuracao} %tirei...
+\import{../sections/}{metodologia}
+\import{../sections/}{resultados}
+\import{../sections/}{conclusao}
+
+\pagebreak
+\bibliography{../refs.bib}
+
+\end{document}
