@@ -1,0 +1,814 @@
+htfcss: cmti  font-style: italic;
+htfcss: cmtt font-family: monospace;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmtt font-family: monospace;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+File: main.html
+File: main.tmp
+File: main.css
+File: main.tmp
+File: main-1.svg
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main2.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main3.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main4.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main5.html
+File: main.tmp
+File: main.tmp
+File: main6.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main7.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main8.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main9.html
+File: main10.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main11.html
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+File: main.tmp
+--- needs --- main.idv[1] ==> main0x.png ---
+--- empty picture --- main.idv[1] ---
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 12
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: h1.partHead{text-align: center}
+Css:  .chapterToc, .likechapterToc {margin-left:0em;}
+Css:  .chapterToc ~ .likesectionToc, .chapterToc ~ .sectionToc, .likechapterToc ~ .likesectionToc, .likechapterToc ~ .sectionToc {margin-left:2em;}
+Css:  .chapterToc ~ .likesectionToc ~ .likesubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc {margin-left:4em;}
+Css: .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:6em;}
+Css:  .likesectionToc , .sectionToc {margin-left:0em;}
+Css:  .likesectionToc ~ .likesubsectionToc, .likesectionToc ~ .subsectionToc, .sectionToc ~ .likesubsectionToc, .sectionToc ~ .subsectionToc {margin-left:2em;}
+Css: .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:4em;}
+Css:  .likesubsectionToc, .subsectionToc {margin-left:0em;}
+Css:  .likesubsectionToc ~ .subsubsectionToc, .subsectionToc ~ .subsubsectionToc {margin-left:2em;}
+Css: .poemtitle, likepoemtitle {margin-left:2em; margin-bottom:0.5em;}
+Css: .skip-verseline {margin-top: 1em;}
+Css: .skip-verseline, .verseline {white-space: nowrap;}
+Css: .flagverse {float:right; font-size:85%; text-decoration:underline;}
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: div.array {text-align:center;}
+Css: .poemline {text-align:right; width:6em;}
+Css: dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
+Css: .figure img.graphics {margin-left:10%;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+Css: .lstlisting .label{margin-right:0.5em; }
+Css: div.lstlisting{font-family: monospace; white-space: nowrap; margin-top:0.5em; margin-bottom:0.5em; }
+Css: div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
+Css: .lstinputlisting .label{margin-right:0.5em;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+l. 18 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='images/arte-uff-capa-.png' images/arte-uff-capa.pdf" ---
+File: images/arte-uff-capa-.png
+--- needs --- main.idv[3] ==> main1x.png ---
+--- empty picture --- main.idv[3] ---
+--- needs --- main.idv[4] ==> main2x.png ---
+--- empty picture --- main.idv[4] ---
+--- needs --- main.idv[6] ==> main3x.png ---
+--- empty picture --- main.idv[6] ---
+--- needs --- main.idv[7] ==> main4x.png ---
+--- empty picture --- main.idv[7] ---
+--- needs --- main.idv[9] ==> main5x.png ---
+--- empty picture --- main.idv[9] ---
+--- needs --- main.idv[10] ==> main6x.png ---
+--- empty picture --- main.idv[10] ---
+--- needs --- main.idv[12] ==> main7x.png ---
+--- empty picture --- main.idv[12] ---
+--- needs --- main.idv[13] ==> main8x.png ---
+--- empty picture --- main.idv[13] ---
+--- needs --- main.idv[15] ==> main9x.png ---
+--- empty picture --- main.idv[15] ---
+--- needs --- main.idv[16] ==> main10x.png ---
+--- empty picture --- main.idv[16] ---
+--- needs --- main.idv[18] ==> main11x.png ---
+--- empty picture --- main.idv[18] ---
+--- needs --- main.idv[19] ==> main12x.png ---
+--- empty picture --- main.idv[19] ---
+--- needs --- main.idv[21] ==> main13x.png ---
+--- empty picture --- main.idv[21] ---
+--- needs --- main.idv[22] ==> main14x.png ---
+--- empty picture --- main.idv[22] ---
+--- needs --- main.idv[24] ==> main15x.png ---
+--- empty picture --- main.idv[24] ---
+--- needs --- main.idv[25] ==> main16x.png ---
+--- empty picture --- main.idv[25] ---
+--- needs --- main.idv[27] ==> main17x.png ---
+--- empty picture --- main.idv[27] ---
+--- needs --- main.idv[28] ==> main18x.png ---
+--- empty picture --- main.idv[28] ---
+--- needs --- main.idv[30] ==> main19x.png ---
+--- empty picture --- main.idv[30] ---
+--- needs --- main.idv[31] ==> main20x.png ---
+--- empty picture --- main.idv[31] ---
+--- needs --- main.idv[33] ==> main21x.png ---
+--- empty picture --- main.idv[33] ---
+--- needs --- main.idv[34] ==> main22x.png ---
+--- empty picture --- main.idv[34] ---
+--- needs --- main.idv[36] ==> main23x.png ---
+--- empty picture --- main.idv[36] ---
+--- needs --- main.idv[37] ==> main24x.png ---
+--- empty picture --- main.idv[37] ---
+--- needs --- main.idv[39] ==> main25x.png ---
+--- empty picture --- main.idv[39] ---
+--- needs --- main.idv[40] ==> main26x.png ---
+--- empty picture --- main.idv[40] ---
+--- needs --- main.idv[42] ==> main27x.png ---
+--- empty picture --- main.idv[42] ---
+--- needs --- main.idv[43] ==> main28x.png ---
+--- empty picture --- main.idv[43] ---
+--- needs --- main.idv[45] ==> main29x.png ---
+--- empty picture --- main.idv[45] ---
+--- needs --- main.idv[46] ==> main30x.png ---
+--- empty picture --- main.idv[46] ---
+--- needs --- main.idv[48] ==> main31x.png ---
+--- empty picture --- main.idv[48] ---
+--- needs --- main.idv[49] ==> main32x.png ---
+--- empty picture --- main.idv[49] ---
+--- needs --- main.idv[51] ==> main33x.png ---
+--- empty picture --- main.idv[51] ---
+--- needs --- main.idv[52] ==> main34x.png ---
+--- empty picture --- main.idv[52] ---
+--- needs --- main.idv[54] ==> main35x.png ---
+--- empty picture --- main.idv[54] ---
+--- needs --- main.idv[55] ==> main36x.png ---
+--- empty picture --- main.idv[55] ---
+--- needs --- main.idv[57] ==> main37x.png ---
+--- empty picture --- main.idv[57] ---
+--- needs --- main.idv[58] ==> main38x.png ---
+--- empty picture --- main.idv[58] ---
+--- needs --- main.idv[60] ==> main39x.png ---
+--- empty picture --- main.idv[60] ---
+--- needs --- main.idv[61] ==> main40x.png ---
+--- empty picture --- main.idv[61] ---
+--- needs --- main.idv[63] ==> main41x.png ---
+--- empty picture --- main.idv[63] ---
+--- needs --- main.idv[64] ==> main42x.png ---
+--- empty picture --- main.idv[64] ---
+--- needs --- main.idv[66] ==> main43x.png ---
+--- empty picture --- main.idv[66] ---
+--- needs --- main.idv[67] ==> main44x.png ---
+--- empty picture --- main.idv[67] ---
+--- needs --- main.idv[69] ==> main45x.png ---
+--- empty picture --- main.idv[69] ---
+--- needs --- main.idv[70] ==> main46x.png ---
+--- empty picture --- main.idv[70] ---
+--- needs --- main.idv[72] ==> main47x.png ---
+--- empty picture --- main.idv[72] ---
+--- needs --- main.idv[73] ==> main48x.png ---
+--- empty picture --- main.idv[73] ---
+--- needs --- main.idv[75] ==> main49x.png ---
+--- empty picture --- main.idv[75] ---
+--- needs --- main.idv[76] ==> main50x.png ---
+--- empty picture --- main.idv[76] ---
+--- needs --- main.idv[78] ==> main51x.png ---
+--- empty picture --- main.idv[78] ---
+--- needs --- main.idv[79] ==> main52x.png ---
+--- empty picture --- main.idv[79] ---
+--- needs --- main.idv[81] ==> main53x.png ---
+--- empty picture --- main.idv[81] ---
+--- needs --- main.idv[82] ==> main54x.png ---
+--- empty picture --- main.idv[82] ---
+--- needs --- main.idv[84] ==> main55x.png ---
+--- empty picture --- main.idv[84] ---
+--- needs --- main.idv[85] ==> main56x.png ---
+--- empty picture --- main.idv[85] ---
+--- needs --- main.idv[87] ==> main57x.png ---
+--- empty picture --- main.idv[87] ---
+--- needs --- main.idv[88] ==> main58x.png ---
+--- empty picture --- main.idv[88] ---
+--- needs --- main.idv[90] ==> main59x.png ---
+--- empty picture --- main.idv[90] ---
+--- needs --- main.idv[91] ==> main60x.png ---
+--- empty picture --- main.idv[91] ---
+--- needs --- main.idv[93] ==> main61x.png ---
+--- empty picture --- main.idv[93] ---
+--- needs --- main.idv[94] ==> main62x.png ---
+--- empty picture --- main.idv[94] ---
+--- needs --- main.idv[96] ==> main63x.png ---
+--- empty picture --- main.idv[96] ---
+--- needs --- main.idv[97] ==> main64x.png ---
+--- empty picture --- main.idv[97] ---
+--- needs --- main.idv[99] ==> main65x.png ---
+--- empty picture --- main.idv[99] ---
+--- needs --- main.idv[100] ==> main66x.png ---
+--- empty picture --- main.idv[100] ---
+--- needs --- main.idv[102] ==> main67x.png ---
+--- empty picture --- main.idv[102] ---
+--- needs --- main.idv[103] ==> main68x.png ---
+--- empty picture --- main.idv[103] ---
+--- needs --- main.idv[105] ==> main69x.png ---
+--- empty picture --- main.idv[105] ---
+--- needs --- main.idv[106] ==> main70x.png ---
+--- empty picture --- main.idv[106] ---
+--- needs --- main.idv[108] ==> main71x.png ---
+--- empty picture --- main.idv[108] ---
+--- needs --- main.idv[109] ==> main72x.png ---
+--- empty picture --- main.idv[109] ---
+--- needs --- main.idv[111] ==> main73x.png ---
+--- empty picture --- main.idv[111] ---
+--- needs --- main.idv[112] ==> main74x.png ---
+--- empty picture --- main.idv[112] ---
+--- needs --- main.idv[114] ==> main75x.png ---
+--- empty picture --- main.idv[114] ---
+--- needs --- main.idv[115] ==> main76x.png ---
+--- empty picture --- main.idv[115] ---
+Css: tr#TBL-1-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-1-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-1-27- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[117] ==> main77x.png ---
+--- empty picture --- main.idv[117] ---
+--- needs --- main.idv[118] ==> main78x.png ---
+--- empty picture --- main.idv[118] ---
+l. 88 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-percent-de-cursos-p-org-acad-.png' ../../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf" ---
+File: ../../graficos/latex-graph-percent-de-cursos-p-org-acad-.png
+--- needs --- main.idv[120] ==> main79x.png ---
+--- empty picture --- main.idv[120] ---
+--- needs --- main.idv[121] ==> main80x.png ---
+--- empty picture --- main.idv[121] ---
+l. 96 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-percent-de-cursos-p-cat-adm-.png' ../../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf" ---
+File: ../../graficos/latex-graph-percent-de-cursos-p-cat-adm-.png
+Css: tr#TBL-2-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-2-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-2-11- td{border-bottom:0.13159em solid}
+l. 109 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-cursos-com-conceito-.png' ../../graficos/latex-graph-cursos-com-conceito.pdf" ---
+File: ../../graficos/latex-graph-cursos-com-conceito-.png
+Css: tr#TBL-3-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-3-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-3-6- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[123] ==> main81x.png ---
+--- empty picture --- main.idv[123] ---
+--- needs --- main.idv[124] ==> main82x.png ---
+--- empty picture --- main.idv[124] ---
+--- needs --- main.idv[126] ==> main83x.png ---
+--- empty picture --- main.idv[126] ---
+--- needs --- main.idv[127] ==> main84x.png ---
+--- empty picture --- main.idv[127] ---
+Css: tr#TBL-4-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-4-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-4-26- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[129] ==> main85x.png ---
+--- empty picture --- main.idv[129] ---
+--- needs --- main.idv[130] ==> main86x.png ---
+--- empty picture --- main.idv[130] ---
+--- needs --- main.idv[132] ==> main87x.png ---
+--- empty picture --- main.idv[132] ---
+--- needs --- main.idv[133] ==> main90x.png ---
+--- empty picture --- main.idv[133] ---
+--- needs --- main.idv[135] ==> main88x.png ---
+--- needs --- main.idv[137] ==> main89x.png ---
+--- needs --- main.idv[139] ==> main91x.png ---
+--- empty picture --- main.idv[139] ---
+--- needs --- main.idv[140] ==> main92x.png ---
+--- empty picture --- main.idv[140] ---
+--- needs --- main.idv[142] ==> main93x.png ---
+--- empty picture --- main.idv[142] ---
+--- needs --- main.idv[143] ==> main94x.png ---
+--- empty picture --- main.idv[143] ---
+--- needs --- main.idv[145] ==> main95x.png ---
+--- empty picture --- main.idv[145] ---
+--- needs --- main.idv[146] ==> main96x.png ---
+--- empty picture --- main.idv[146] ---
+Css: tr#TBL-5-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-5-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-5-8- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[148] ==> main97x.png ---
+--- empty picture --- main.idv[148] ---
+--- needs --- main.idv[149] ==> main98x.png ---
+--- empty picture --- main.idv[149] ---
+--- needs --- main.idv[151] ==> main99x.png ---
+--- empty picture --- main.idv[151] ---
+--- needs --- main.idv[152] ==> main100x.png ---
+--- empty picture --- main.idv[152] ---
+--- needs --- main.idv[154] ==> main101x.png ---
+--- empty picture --- main.idv[154] ---
+--- needs --- main.idv[155] ==> main102x.png ---
+--- empty picture --- main.idv[155] ---
+--- needs --- main.idv[157] ==> main103x.png ---
+--- empty picture --- main.idv[157] ---
+--- needs --- main.idv[158] ==> main104x.png ---
+--- empty picture --- main.idv[158] ---
+--- needs --- main.idv[160] ==> main105x.png ---
+--- empty picture --- main.idv[160] ---
+--- needs --- main.idv[161] ==> main106x.png ---
+--- empty picture --- main.idv[161] ---
+--- needs --- main.idv[163] ==> main107x.png ---
+--- empty picture --- main.idv[163] ---
+--- needs --- main.idv[164] ==> main108x.png ---
+--- empty picture --- main.idv[164] ---
+--- needs --- main.idv[166] ==> main109x.png ---
+--- empty picture --- main.idv[166] ---
+--- needs --- main.idv[167] ==> main110x.png ---
+--- empty picture --- main.idv[167] ---
+l. 59 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-matriz-correlacao2-.png' ../../graficos/latex-graph-matriz-correlacao2.pdf" ---
+File: ../../graficos/latex-graph-matriz-correlacao2-.png
+--- needs --- main.idv[169] ==> main111x.png ---
+--- empty picture --- main.idv[169] ---
+--- needs --- main.idv[170] ==> main112x.png ---
+--- empty picture --- main.idv[170] ---
+--- needs --- main.idv[172] ==> main113x.png ---
+--- empty picture --- main.idv[172] ---
+--- needs --- main.idv[173] ==> main114x.png ---
+--- empty picture --- main.idv[173] ---
+--- needs --- main.idv[175] ==> main115x.png ---
+--- empty picture --- main.idv[175] ---
+--- needs --- main.idv[176] ==> main116x.png ---
+--- empty picture --- main.idv[176] ---
+File: ../../graficos/latex-graph-pairs.png
+--- needs --- main.idv[178] ==> main117x.png ---
+--- empty picture --- main.idv[178] ---
+--- needs --- main.idv[179] ==> main118x.png ---
+--- empty picture --- main.idv[179] ---
+--- needs --- main.idv[181] ==> main119x.png ---
+--- empty picture --- main.idv[181] ---
+--- needs --- main.idv[182] ==> main122x.png ---
+--- empty picture --- main.idv[182] ---
+--- needs --- main.idv[184] ==> main120x.png ---
+--- needs --- main.idv[186] ==> main121x.png ---
+--- needs --- main.idv[188] ==> main123x.png ---
+--- empty picture --- main.idv[188] ---
+--- needs --- main.idv[189] ==> main124x.png ---
+--- empty picture --- main.idv[189] ---
+--- needs --- main.idv[191] ==> main125x.png ---
+--- empty picture --- main.idv[191] ---
+--- needs --- main.idv[192] ==> main126x.png ---
+--- empty picture --- main.idv[192] ---
+--- needs --- main.idv[194] ==> main127x.png ---
+--- empty picture --- main.idv[194] ---
+--- needs --- main.idv[195] ==> main128x.png ---
+--- empty picture --- main.idv[195] ---
+--- needs --- main.idv[197] ==> main129x.png ---
+--- empty picture --- main.idv[197] ---
+--- needs --- main.idv[198] ==> main130x.png ---
+--- empty picture --- main.idv[198] ---
+l. 155 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-scree-plot-pca-.png' ../../graficos/latex-graph-scree-plot-pca.pdf" ---
+File: ../../graficos/latex-graph-scree-plot-pca-.png
+--- needs --- main.idv[200] ==> main131x.png ---
+--- empty picture --- main.idv[200] ---
+--- needs --- main.idv[201] ==> main132x.png ---
+--- empty picture --- main.idv[201] ---
+--- needs --- main.idv[203] ==> main133x.png ---
+--- empty picture --- main.idv[203] ---
+--- needs --- main.idv[204] ==> main134x.png ---
+--- empty picture --- main.idv[204] ---
+--- needs --- main.idv[206] ==> main135x.png ---
+--- empty picture --- main.idv[206] ---
+--- needs --- main.idv[207] ==> main136x.png ---
+--- empty picture --- main.idv[207] ---
+Css: tr#TBL-6-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-6-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-6-24- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[209] ==> main137x.png ---
+--- empty picture --- main.idv[209] ---
+--- needs --- main.idv[210] ==> main138x.png ---
+--- empty picture --- main.idv[210] ---
+--- needs --- main.idv[212] ==> main139x.png ---
+--- empty picture --- main.idv[212] ---
+--- needs --- main.idv[213] ==> main140x.png ---
+--- empty picture --- main.idv[213] ---
+--- needs --- main.idv[215] ==> main141x.png ---
+--- empty picture --- main.idv[215] ---
+--- needs --- main.idv[216] ==> main142x.png ---
+--- empty picture --- main.idv[216] ---
+Css: tr#TBL-7-1- td{border-top:0.13159em solid} 
+Css: tr#TBL-7-1- td{border-bottom:0.08224em solid}
+Css: tr#TBL-7-24- td{border-bottom:0.13159em solid}
+--- needs --- main.idv[218] ==> main143x.png ---
+--- empty picture --- main.idv[218] ---
+--- needs --- main.idv[219] ==> main144x.png ---
+--- empty picture --- main.idv[219] ---
+--- needs --- main.idv[221] ==> main145x.png ---
+--- empty picture --- main.idv[221] ---
+--- needs --- main.idv[222] ==> main146x.png ---
+--- empty picture --- main.idv[222] ---
+--- needs --- main.idv[224] ==> main147x.png ---
+--- empty picture --- main.idv[224] ---
+--- needs --- main.idv[225] ==> main148x.png ---
+--- empty picture --- main.idv[225] ---
+--- needs --- main.idv[227] ==> main149x.png ---
+--- empty picture --- main.idv[227] ---
+--- needs --- main.idv[228] ==> main150x.png ---
+--- empty picture --- main.idv[228] ---
+--- needs --- main.idv[230] ==> main151x.png ---
+--- empty picture --- main.idv[230] ---
+--- needs --- main.idv[231] ==> main152x.png ---
+--- empty picture --- main.idv[231] ---
+--- needs --- main.idv[233] ==> main153x.png ---
+--- empty picture --- main.idv[233] ---
+--- needs --- main.idv[234] ==> main154x.png ---
+--- empty picture --- main.idv[234] ---
+--- needs --- main.idv[236] ==> main155x.png ---
+--- empty picture --- main.idv[236] ---
+--- needs --- main.idv[237] ==> main156x.png ---
+--- empty picture --- main.idv[237] ---
+--- needs --- main.idv[239] ==> main157x.png ---
+--- empty picture --- main.idv[239] ---
+--- needs --- main.idv[240] ==> main158x.png ---
+--- empty picture --- main.idv[240] ---
+--- needs --- main.idv[242] ==> main159x.png ---
+--- empty picture --- main.idv[242] ---
+--- needs --- main.idv[243] ==> main160x.png ---
+--- empty picture --- main.idv[243] ---
+--- needs --- main.idv[245] ==> main161x.png ---
+--- empty picture --- main.idv[245] ---
+--- needs --- main.idv[246] ==> main162x.png ---
+--- empty picture --- main.idv[246] ---
+l. 82 --- needs --- "rungs -q -dNOPAUSE -dBATCH -sDEVICE=pngalpha -r300  -sOutputFile='../../graficos/latex-graph-fa-scree-plot-.png' ../../graficos/latex-graph-fa-scree-plot.pdf" ---
+File: ../../graficos/latex-graph-fa-scree-plot-.png
+--- needs --- main.idv[248] ==> main163x.png ---
+--- empty picture --- main.idv[248] ---
+--- needs --- main.idv[249] ==> main164x.png ---
+--- empty picture --- main.idv[249] ---
+--- needs --- main.idv[251] ==> main165x.png ---
+--- empty picture --- main.idv[251] ---
+--- needs --- main.idv[252] ==> main166x.png ---
+--- empty picture --- main.idv[252] ---
+--- needs --- main.idv[254] ==> main167x.png ---
+--- empty picture --- main.idv[254] ---
+--- needs --- main.idv[255] ==> main168x.png ---
+--- empty picture --- main.idv[255] ---
+--- needs --- main.idv[257] ==> main169x.png ---
+--- empty picture --- main.idv[257] ---
+--- needs --- main.idv[258] ==> main170x.png ---
+--- empty picture --- main.idv[258] ---
+--- needs --- main.idv[260] ==> main171x.png ---
+--- empty picture --- main.idv[260] ---
+--- needs --- main.idv[261] ==> main172x.png ---
+--- empty picture --- main.idv[261] ---
+--- needs --- main.idv[263] ==> main173x.png ---
+--- empty picture --- main.idv[263] ---
+--- needs --- main.idv[264] ==> main174x.png ---
+--- empty picture --- main.idv[264] ---
+--- needs --- main.idv[266] ==> main175x.png ---
+--- empty picture --- main.idv[266] ---
+--- needs --- main.idv[267] ==> main176x.png ---
+--- empty picture --- main.idv[267] ---
+--- needs --- main.idv[269] ==> main177x.png ---
+--- empty picture --- main.idv[269] ---
+--- needs --- main.idv[270] ==> main178x.png ---
+--- empty picture --- main.idv[270] ---
+--- needs --- main.idv[272] ==> main179x.png ---
+--- empty picture --- main.idv[272] ---
+--- needs --- main.idv[273] ==> main180x.png ---
+--- empty picture --- main.idv[273] ---
+--- needs --- main.idv[275] ==> main181x.png ---
+--- empty picture --- main.idv[275] ---
+--- needs --- main.idv[276] ==> main182x.png ---
+--- empty picture --- main.idv[276] ---
+--- needs --- main.idv[278] ==> main183x.png ---
+--- empty picture --- main.idv[278] ---
+--- needs --- main.idv[279] ==> main184x.png ---
+--- empty picture --- main.idv[279] ---
+--- needs --- main.idv[281] ==> main185x.png ---
+--- empty picture --- main.idv[281] ---
+--- characters ---
+Font("cmr","10","10","100")
+Font("cmr","12","12","100")
+Font("cmr","10","10","109")
+Font("cmss","12","12","120")
+Font("cmssbx","10","10","207")
+Font("cmr","12","12","120")
+Font("cmssbx","10","10","172")
+Font("cmr","8","8","100")
+Font("cmmi","12","12","100")
+Font("cmmi","8","8","100")
+Font("cmsy","10","10","120")
+Font("cmsy","8","8","100")
+Font("cmex","10","10","120")
+Font("cmbx","12","12","100")
+Font("cmtt","12","12","100")
+Font("cmss","17","17","100")
+Font("cmti","12","12","100")
+Font("cmtt","10","10","109")
+Font("cmti","10","10","100")
+Font("cmti","10","10","109")

@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.31)  31 AUG 2018 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.12)  4 APR 2019 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  main.tex
+(./main.tex (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2016/02/26 v-1.9.6 abnTeX2
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -374,7 +376,7 @@ Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -413,6 +415,7 @@ File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
 Package hyperref Info: Hyper figures OFF on input line 4509.
 Package hyperref Info: Link nesting OFF on input line 4514.
 Package hyperref Info: Hyper index ON on input line 4517.
@@ -431,45 +434,50 @@ LaTeX Info: Redefining \url on input line 5115.
 \Fld@menulength=\count141
 \Field@Width=\dimen149
 \Fld@charsize=\dimen150
+\Field@toks=\toks23
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
 Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring ON on input line 6387.
 Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count142
-\c@Item=\count143
-\c@Hfootnote=\count144
-)
-(/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
+
+
+Package hyperref Message: Stopped early.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count145
-\c@Hpagenote=\count146
+\c@memhycontfloat=\count143
+\c@Hpagenote=\count144
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver: htex4ht.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count147
-\c@bookmark@seq@number=\count148
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2018/02/06 v6.86b Hyperref driver for TeX4ht
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip185
-)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-02-11-15:01
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks24
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/usepackage.4ht)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
-\BKM@id=\count149
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-dvips.def
+File: bkm-dvips.def 2016/05/17 v1.26 bookmark driver for dvips (HO)
+\BKM@id=\count145
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
@@ -482,35 +490,35 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count150
+\babel@savecnt=\count146
 \U@D=\dimen151
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count151
+\bbl@dirlevel=\count147
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip186
+\labelindent=\skip185
 \enit@outerparindent=\dimen152
-\enit@toks=\toks23
+\enit@toks=\toks25
 \enit@inbox=\box29
-\enitdp@description=\count152
+\enitdp@description=\count148
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count153
-\calc@Bcount=\count154
+\calc@Acount=\count149
+\calc@Bcount=\count150
 \calc@Adimen=\dimen153
 \calc@Bdimen=\dimen154
-\calc@Askip=\skip187
-\calc@Bskip=\skip188
+\calc@Askip=\skip186
+\calc@Bskip=\skip187
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count155
-\calc@Cskip=\skip189
+\calc@Ccount=\count151
+\calc@Cskip=\skip188
 )
 
 ******************************************************
@@ -532,46 +540,44 @@ Sidefoothsep and sidefootwidth: 7pt and 50pt
 Sidefootvsep and sidefootheight: 14.5pt and 546.64995pt
 ******************************************************
 
-\c@abntex@bookmarkcounter=\count156
-\cftlastnumwidth=\skip190
-\chapternamenumlength=\skip191
-\ABNTEXcitacaorecuo=\skip192
-\c@alineasi=\count157
-\c@alineasii=\count158
-\enitdp@alineas=\count159
-\c@subalineasi=\count160
-\enitdp@subalineas=\count161
-\c@incisosi=\count162
-\enitdp@incisos=\count163
-\ABNTEXsignwidth=\skip193
-\ABNTEXsignthickness=\skip194
-\ABNTEXsignskip=\skip256
-)
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/settings/packages.tex
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/meupreambulo.sty
+\c@abntex@bookmarkcounter=\count152
+\cftlastnumwidth=\skip189
+\chapternamenumlength=\skip190
+\ABNTEXcitacaorecuo=\skip191
+\c@alineasi=\count153
+\c@alineasii=\count154
+\enitdp@alineas=\count155
+\c@subalineasi=\count156
+\enitdp@subalineas=\count157
+\c@incisosi=\count158
+\enitdp@incisos=\count159
+\ABNTEXsignwidth=\skip192
+\ABNTEXsignthickness=\skip193
+\ABNTEXsignskip=\skip194
+) (./settings/packages.tex (./meupreambulo.sty
 Package: meupreambulo 2010/07/28 BBischof's custom LaTeX style
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip257
-\ABCIauxlen=\skip258
-\c@ABCIaux=\count164
-\c@ABCImax=\count165
+\minimumbiblabelwidth=\skip256
+\ABCIauxlen=\skip257
+\c@ABCIaux=\count160
+\c@ABCImax=\count161
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip259
+\biblabelsep=\skip258
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks24
+\ABCItoken=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks25
-\inpenc@posthook=\toks26
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -903,20 +909,20 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: dvips.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen155
 \Gin@req@width=\dimen156
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count166
-\float@exts=\toks27
+\c@float@type=\count162
+\float@exts=\toks29
 \float@box=\box30
-\@float@everytoks=\toks28
+\@float@everytoks=\toks30
 \@floatcapt=\box31
 )
 
@@ -940,18 +946,20 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen162
 \caption@hangindent=\dimen163
 )
-\c@ContinuedFloat=\count167
+\c@ContinuedFloat=\count163
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box32
-\beforetitleunit=\skip260
-\aftertitleunit=\skip261
+\beforetitleunit=\skip259
+\aftertitleunit=\skip260
 \ttl@plus=\dimen164
 \ttl@minus=\dimen165
-\ttl@toksa=\toks29
+\ttl@toksa=\toks31
 \titlewidth=\dimen166
 \titlewidthlast=\dimen167
 \titlewidthfirst=\dimen168
@@ -961,7 +969,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip262
+\@mathmargin=\skip261
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -969,7 +977,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks30
+\@emptytoks=\toks32
 \ex@=\dimen169
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -979,13 +987,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count168
+\inf@bad=\count164
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count169
-\leftroot@=\count170
+\uproot@=\count165
+\leftroot@=\count166
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count171
-\DOTSCASE@=\count172
+\classnum@=\count167
+\DOTSCASE@=\count168
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -994,26 +1002,26 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen171
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count173
-\c@MaxMatrixCols=\count174
+\macc@depth=\count169
+\c@MaxMatrixCols=\count170
 \dotsspace@=\muskip11
-\c@parentequation=\count175
-\dspbrk@lvl=\count176
-\tag@help=\toks31
-\row@=\count177
-\column@=\count178
-\maxfields@=\count179
-\andhelp@=\toks32
+\c@parentequation=\count171
+\dspbrk@lvl=\count172
+\tag@help=\toks33
+\row@=\count173
+\column@=\count174
+\maxfields@=\count175
+\andhelp@=\toks34
 \eqnshift@=\dimen172
 \alignsep@=\dimen173
 \tagshift@=\dimen174
 \tagwidth@=\dimen175
 \totwidth@=\dimen176
 \lineht@=\dimen177
-\@envbody=\toks33
-\multlinegap=\skip263
-\multlinetaggap=\skip264
-\mathdisplay@stack=\toks34
+\@envbody=\toks35
+\multlinegap=\skip262
+\multlinetaggap=\skip263
+\mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -1022,15 +1030,15 @@ Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count180
+\etb@tempcnta=\count176
 )
-\csq@reset=\count181
-\csq@gtype=\count182
-\csq@glevel=\count183
-\csq@qlevel=\count184
-\csq@maxlvl=\count185
-\csq@tshold=\count186
-\csq@ltx@everypar=\toks35
+\csq@reset=\count177
+\csq@gtype=\count178
+\csq@glevel=\count179
+\csq@qlevel=\count180
+\csq@maxlvl=\count181
+\csq@tshold=\count182
+\csq@ltx@everypar=\toks37
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
@@ -1043,18 +1051,18 @@ File: csquotes.cfg
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count187
+\c@lips@count=\count183
 )
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks36
+\FN@temptoken=\toks38
 \footnotemargin=\dimen178
 
 
 LaTeX Warning: Command \@makecol  has changed.
                Check if current package is valid.
 
-\c@pp@next@reset=\count188
+\c@pp@next@reset=\count184
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1072,9 +1080,8 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -1094,18 +1101,28 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2017/10/31 v0.5l Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command which
+(pdfpages)                will insert empty pages instead of the actual PDF,
+(pdfpages)                because we are running in DVI mode or with
+(pdfpages)                dvips driver.
+
+))
 \AM@pagebox=\box35
-\AM@global@opts=\toks37
-\AM@toc@title=\toks38
-\c@AM@survey=\count189
+\AM@global@opts=\toks39
+\AM@toc@title=\toks40
+\c@AM@survey=\count185
 \AM@templatesizebox=\box36
-)
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/usepackage.4ht)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks39
+\pgfutil@everybye=\toks41
 \pgfutil@tempdima=\dimen181
 \pgfutil@tempdimb=\dimen182
 
@@ -1126,12 +1143,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks40
-\pgfkeys@temptoks=\toks41
+\pgfkeys@pathtoks=\toks42
+\pgfkeys@temptoks=\toks43
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks42
+\pgfkeys@tmptoks=\toks44
 ))
 \pgf@x=\dimen183
 \pgf@y=\dimen184
@@ -1143,25 +1160,33 @@ ex
 \pgf@yc=\dimen190
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count190
-\c@pgf@countb=\count191
-\c@pgf@countc=\count192
-\c@pgf@countd=\count193
-\t@pgf@toka=\toks43
-\t@pgf@tokb=\toks44
-\t@pgf@tokc=\toks45
+\c@pgf@counta=\count186
+\c@pgf@countb=\count187
+\c@pgf@countc=\count188
+\c@pgf@countd=\count189
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-tex4ht.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-tex4ht.def
+File: pgfsys-tex4ht.def 2013/08/06  (rcs-revision 1.25)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-svg.de
 f
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
+File: pgfsys-common-svg.def 2013/08/28  (rcs-revision 1.24)
+\pgf@sys@svg@objectcount=\count190
+\pgf@sys@svg@scopecount=\count191
+)
+\pgf@sys@svg@picnum=\count192
+\pgf@sys@svg@nodenum=\count193
+\pgfsys@foreignobject@Box=\box38
+\pgf@s=\dimen191
+\pgf@t=\dimen192
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
@@ -1179,12 +1204,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen191
+\pgfmath@dimen=\dimen193
 \pgfmath@count=\count267
-\pgfmath@box=\box38
-\pgfmath@toks=\toks46
-\pgfmath@stack@operand=\toks47
-\pgfmath@stack@operation=\toks48
+\pgfmath@box=\box39
+\pgfmath@toks=\toks48
+\pgfmath@stack@operand=\toks49
+\pgfmath@stack@operation=\toks50
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1209,52 +1234,52 @@ thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen192
-\pgf@picmaxx=\dimen193
-\pgf@picminy=\dimen194
-\pgf@picmaxy=\dimen256
-\pgf@pathminx=\dimen257
-\pgf@pathmaxx=\dimen258
-\pgf@pathminy=\dimen259
-\pgf@pathmaxy=\dimen260
-\pgf@xx=\dimen261
-\pgf@xy=\dimen262
-\pgf@yx=\dimen263
-\pgf@yy=\dimen264
-\pgf@zx=\dimen265
-\pgf@zy=\dimen266
+\pgf@picminx=\dimen194
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen267
-\pgf@path@lasty=\dimen268
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen269
-\pgf@shorten@start@additional=\dimen270
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box39
-\pgf@hbox=\box40
-\pgf@layerbox@main=\box41
+\pgfpic=\box40
+\pgf@hbox=\box41
+\pgf@layerbox@main=\box42
 \pgf@picture@serial@count=\count269
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen271
+\pgflinewidth=\dimen273
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen272
-\pgf@pt@y=\dimen273
-\pgf@pt@temp=\dimen274
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1270,11 +1295,11 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen275
+\pgfarrowsep=\dimen277
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen276
+\pgf@max=\dimen278
 \pgf@sys@shading@range@num=\count270
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -1283,7 +1308,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box42
+\pgfexternal@startupbox=\box43
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1299,15 +1324,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box43
+\pgfnodeparttextbox=\box44
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen277
-\pgf@nodesepend=\dimen278
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1321,10 +1346,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen279
-\pgffor@skip=\dimen280
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks51
+\pgffor@toks=\toks52
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1333,18 +1358,18 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count271
-\pgfplotmarksize=\dimen281
+\pgfplotmarksize=\dimen283
 )
-\tikz@lastx=\dimen282
-\tikz@lasty=\dimen283
-\tikz@lastxsaved=\dimen284
-\tikz@lastysaved=\dimen285
-\tikzleveldistance=\dimen286
-\tikzsiblingdistance=\dimen287
-\tikz@figbox=\box44
-\tikz@figbox@bg=\box45
-\tikz@tempbox=\box46
-\tikz@tempbox@bg=\box47
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box45
+\tikz@figbox@bg=\box46
+\tikz@tempbox=\box47
+\tikz@tempbox@bg=\box48
 \tikztreelevel=\count272
 \tikznumberofchildren=\count273
 \tikznumberofcurrentchild=\count274
@@ -1364,23 +1389,23 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count280
-\lst@gtempboxa=\box48
-\lst@token=\toks51
+\lst@gtempboxa=\box49
+\lst@token=\toks53
 \lst@length=\count281
-\lst@currlwidth=\dimen288
+\lst@currlwidth=\dimen290
 \lst@column=\count282
 \lst@pos=\count283
-\lst@lostspace=\dimen289
-\lst@width=\dimen290
+\lst@lostspace=\dimen291
+\lst@width=\dimen292
 \lst@newlines=\count284
 \lst@lineno=\count285
-\lst@maxwidth=\dimen291
+\lst@maxwidth=\dimen293
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count286
 \lst@skipnumbers=\count287
-\lst@framebox=\box49
+\lst@framebox=\box50
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1390,8 +1415,8 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/settings/preferences.
-tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(./settings/preferences.tex
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ))
 (../pre-text/dados-capa.tex
@@ -1404,7 +1429,577 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
 
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.aux
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2017-05-09-09:21
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-02-11-15:01
+
+--- needs --- tex4ht main ---
+\tmp:cnt=\count288
+\openout15 = `main.tmp'.
+
+(./main.tmp)
+\tmp:dim=\skip264
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./main.xref)
+\:refout=\write5
+\openout5 = `main.xref'.
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html,htex4ht
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+\:tokwrite=\toks54
+\:tokpage=\toks55
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `main.4ct'.
+
+\:tocout=\write6
+\openout6 = `main.4tc'.
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2018-01-12-14:38
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/memoir.4ht
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/book.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/verse.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dcolumn.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tabularx.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/booktabs.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mempatch.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2016-01-12-16:05
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count289
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 29.
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2017-11-27-09:16
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+LaTeX Info: Redefining \autoref on input line 95.
+\Hy@SectionHShift=\skip265
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/babel.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/portuges.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/enumitem.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/inputenc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/utf8.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2017-10-21-16:16
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics.4ht
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/float.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/caption.4ht
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/titlesec.4ht
+version 2014-07-14-17:09
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip12
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/footmisc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+version 2017-04-28-08:47
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pgf.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/everyshi.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/listings.4ht
+version 2017-04-22-16:03
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+--------------------------------------
+--- Note --- to ensure proper alignments use fixed size fonts (see listings.dtx
+)
+--------------------------------------
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+))
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-02-21-09:31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2017-03-30-16:04
+)) (./main.aux
 
 LaTeX Warning: Label `my-label' multiply defined.
 
@@ -1425,273 +2020,616 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-\AtBeginShipoutBox=\box50
+\AtBeginShipoutBox=\box51
 Package hyperref Info: Link coloring ON on input line 13.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count288
-)
-Redoing nameref's sectioning
-Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 13.
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
 LaTeX Info: Redefining \nameref on input line 13.
-\myptabbox=\box51
-\myptabboxwidth=\skip265
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen292
-\scratchbox=\box52
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen293
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks53
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+\myptabbox=\box52
+\myptabboxwidth=\skip266
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = macro:->\:CheckOption {refcaption}\if:Option \
+SkipRefstepAnchor \fi \refstepcounter \@captype \@dblarg {\@caption \@captype }
+.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]->\gdef \NR:Type {\@currenv
+ir }\gdef \NR:Title {\a:newlabel {#2}}\o:NR@@caption {#1}[{#2}].
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 125.
 )
-ABD: EveryShipout initializing macros
-\c@lstlisting=\count295
+\c@lstlisting=\count290
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 13.
-<images/arte-uff-capa.pdf, id=7, 597.50786pt x 845.04686pt>
-File: images/arte-uff-capa.pdf Graphic file (type pdf)
-<use images/arte-uff-capa.pdf>
-Package pdftex.def Info: images/arte-uff-capa.pdf  used on input line 18.
-(pdftex.def)             Requested size: 614.295pt x 868.7962pt.
+--- file main.css ---
+
+l.18 --- TeX4ht warning --- File `"images/arte-uff-capa.xbb"' not found ---
+l.18 --- TeX4ht warning --- Cannot determine size of graphic in "images/arte-uf
+f-capa.xbb" (no BoundingBox) ---
+l. 18 --- needs --- images/arte-uff-capa-.png ---
+
+Package pgf Warning: Your graphic driver pgfsys-tex4ht.def does not support mar
+king the current position. This warning is given only once on input line 20.
+
+l. 23 Writing main.idv[1] (main0x.png)
+l. 23 Writing main.idv[2] (main1x.png)
+[1
+
+]
+l. 23 Writing main.idv[3] (main2x.png)
+l. 23 Writing main.idv[4] (main3x.png)
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/guilherme/Drive/AdmU
-ff_2013_2/TCC/Ariel/latex/main/images/arte-uff-capa.pdf>]pdfTeX warning (ext4):
- destination with the same identifier (name{page.1}) has been already used, dup
-licate ignored
-<to be read again> 
-                   \relax 
-l.26 
-      [1
+]
+l. 26 Writing main.idv[5] (main4x.png)
+l. 26 Writing main.idv[6] (main5x.png)
+ [2
+
+]
+l. 26 Writing main.idv[7] (main6x.png)
+l. 26 Writing main.idv[8] (main7x.png)
+ [3
+
+]
+
+Package pdfpages Warning: I cannot determine the number of pages of the
+(pdfpages)                included document, because we are running in
+(pdfpages)                DVI mode. 
+(pdfpages)                You can use the option `lastpage' to give me a hint.
+
+l. 27 Writing main.idv[9] (main8x.png)
+l. 27 Writing main.idv[10] (main9x.png)
+[4
+
+]
+l. 27 Writing main.idv[11] (main10x.png)
+l. 27 Writing main.idv[12] (main11x.png)
+ [5]
+l. 29 Writing main.idv[13] (main12x.png)
+l. 29 Writing main.idv[14] (main13x.png)
+ [6]
+l. 32 Writing main.idv[15] (main14x.png)
+l. 32 Writing main.idv[16] (main15x.png)
+ [7] (./main.4ct)
+l. 33 Writing main.idv[17] (main16x.png)
+l. 33 Writing main.idv[18] (main17x.png)
+ [8] (./main.4ct)
+l. 35 Writing main.idv[19] (main18x.png)
+l. 35 Writing main.idv[20] (main19x.png)
+ [9
+
+] (./main.4ct
+l. 46 Writing main.idv[21] (main20x.png)
+l. 46 Writing main.idv[22] (main21x.png)
+ [10
+
+])
+l. 37 Writing main.idv[23] (main22x.png)
+l. 37 Writing main.idv[24] (main23x.png)
+ [11]
+(../sections/resumo.tex
+l. 12 Writing main.idv[25] (main24x.png)
+l. 12 Writing main.idv[26] (main25x.png)
+ [12
+
+]) (../sections/lista-abreviaturas.tex
+l. 2 Writing main.idv[27] (main26x.png)
+l. 2 Writing main.idv[28] (main27x.png)
+ [13]
+l. 17 Writing main.idv[29] (main28x.png)
+l. 17 Writing main.idv[30] (main29x.png)
+ [14]
+l. 30 Writing main.idv[31] (main30x.png)
+l. 30 Writing main.idv[32] (main31x.png)
+
+[15])
+l. 44 Writing main.idv[33] (main32x.png)
+l. 44 Writing main.idv[34] (main33x.png)
+ [16] (../sections/introducao.tex
+l. 41 Writing main.idv[35] (main34x.png)
+l. 41 Writing main.idv[36] (main35x.png)
+ [17]
+l. 63 Writing main.idv[37] (main36x.png)
+l. 63 Writing main.idv[38] (main37x.png)
+ [18]
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...al: auto-avaliação (pelas CPAs\footnote{
+                                                  Comissão Própria de Aval...
+
+? 
+--- file main2.html ---
+l. 84 Writing main.idv[39] (main38x.png)
+l. 84 Writing main.idv[40] (main39x.png)
+[19]
+l. 109 Writing main.idv[41] (main40x.png)
+l. 109 Writing main.idv[42] (main41x.png)
+ [20])
+l. 45 Writing main.idv[43] (main42x.png)
+l. 45 Writing main.idv[44] (main43x.png)
+ [21] (../sections/avaliacao-brasil.tex
+l. 11 Writing main.idv[45] (main44x.png)
+l. 11 Writing main.idv[46] (main45x.png)
+ [22]
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...rande destaque o plano Atcon\footnotemark~
+                                                   como um dos primeiros pro...
+
+? 
+--- file main3.html ---
+l. 18 Writing main.idv[47] (main46x.png)
+l. 18 Writing main.idv[48] (main47x.png)
+[23
+
+]
+l. 27 Writing main.idv[49] (main48x.png)
+l. 27 Writing main.idv[50] (main49x.png)
+ [24]
+l. 36 Writing main.idv[51] (main50x.png)
+l. 36 Writing main.idv[52] (main51x.png)
+ [25]
+l. 44 Writing main.idv[53] (main52x.png)
+l. 44 Writing main.idv[54] (main53x.png)
+ [26]
+l. 56 Writing main.idv[55] (main54x.png)
+l. 56 Writing main.idv[56] (main55x.png)
+ [27]) (../sections/avaliacao-mundo.tex)
+(../sections/metodologia.tex
+l. 2 Writing main.idv[57] (main56x.png)
+l. 2 Writing main.idv[58] (main57x.png)
+ [28]
+l. 15 Writing main.idv[59] (main58x.png)
+l. 15 Writing main.idv[60] (main59x.png)
+ [29] (../sections/eda.tex
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...e do pacote \lstinline{dplyr}\footnotemark.
+                                                   De acordo com \citeonline...
+
+? 
+--- file main4.html ---
+l. 6 Writing main.idv[61] (main60x.png)
+l. 6 Writing main.idv[62] (main61x.png)
+[30]
+l. 16 Writing main.idv[63] (main62x.png)
+l. 16 Writing main.idv[64] (main63x.png)
+ [31
+
+]
+l. 31 Writing main.idv[65] (main64x.png)
+l. 31 Writing main.idv[66] (main65x.png)
+ [32]
+l. 43 Writing main.idv[67] (main66x.png)
+l. 43 Writing main.idv[68] (main67x.png)
+ [33]
+l. 51 Writing main.idv[69] (main68x.png)
+l. 51 Writing main.idv[70] (main69x.png)
+ [34]
+l. 57 Writing main.idv[71] (main70x.png)
+l. 57 Writing main.idv[72] (main71x.png)
+ [35]
+l. 66 Writing main.idv[73] (main72x.png)
+l. 66 Writing main.idv[74] (main73x.png)
+ [36]
+(../../tabelas/latex-tbl-cursos-por-regiao.tex
+l. 38 Writing main.idv[75] (main74x.png)
+l. 38 Writing main.idv[76] (main75x.png)
+ [37])
+l. 85 Writing main.idv[77] (main76x.png)
+l. 85 Writing main.idv[78] (main77x.png)
+ [38]
+l.88 --- TeX4ht warning --- File `"../../graficos/latex-graph-percent-de-cursos
+-p-org-acad.xbb"' not found ---
+l.88 --- TeX4ht warning --- Cannot determine size of graphic in "../../graficos
+/latex-graph-percent-de-cursos-p-org-acad.xbb" (no BoundingBox) ---
+l. 88 --- needs --- ../../graficos/latex-graph-percent-de-cursos-p-org-acad-.pn
+g ---
+l. 93 Writing main.idv[79] (main78x.png)
+l. 93 Writing main.idv[80] (main79x.png)
+[39]
+l.96 --- TeX4ht warning --- File `"../../graficos/latex-graph-percent-de-cursos
+-p-cat-adm.xbb"' not found ---
+l.96 --- TeX4ht warning --- Cannot determine size of graphic in "../../graficos
+/latex-graph-percent-de-cursos-p-cat-adm.xbb" (no BoundingBox) ---
+l. 96 --- needs --- ../../graficos/latex-graph-percent-de-cursos-p-cat-adm-.png
+ ---
+(../../tabelas/latex-tbl-ies-p-cat-adm.tex)
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...cursos não obtiveram notas\footnotemark.
+                                                   Os demais cursos estão r...
+
+? 
+--- file main5.html ---
+l.109 --- TeX4ht warning --- File `"../../graficos/latex-graph-cursos-com-conce
+ito.xbb"' not found ---
+l.109 --- TeX4ht warning --- Cannot determine size of graphic in "../../grafico
+s/latex-graph-cursos-com-conceito.xbb" (no BoundingBox) ---
+l. 109 --- needs --- ../../graficos/latex-graph-cursos-com-conceito-.png ---
+(../../tabelas/latex-tbl-cursos-com-conceito.tex)
+l. 117 Writing main.idv[81] (main80x.png)
+l. 117 Writing main.idv[82] (main81x.png)
+ [40]
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 ...�ão de dados denominado $k$-NN\footnote{
+                                                  Este método encontra-se i...
+
+? 
+--- file main6.html ---
+(../../tabelas/latex-tbl-sumario-estatistico-com-knn.tex
+l. 4 Writing main.idv[83] (main82x.png)
+l. 4 Writing main.idv[84] (main83x.png)
+ [41])
+l. 127 Writing main.idv[85] (main84x.png)
+l. 127 Writing main.idv[86] (main85x.png)
+ [42])
+(../sections/pca.tex
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...o uso do pacote \lstinline{psych}\footnote{
+                                                  Possui ferramentas estatí...
+
+? 
+--- file main7.html ---
+l. 11 Writing main.idv[87] (main86x.png)
+l. 11 Writing main.idv[88] (main87x.png)
+[43
+
+]
+l. 11 Writing main.idv[89] (main88x.png)
+l. 17 Writing main.idv[90] (main89x.png)
+l. 27 Writing main.idv[91] (main90x.png)
+l. 27 Writing main.idv[92] (main91x.png)
+ [44] (../../tabelas/latex-tbl-vars-padronizadas-inep.tex
+l. 4 Writing main.idv[93] (main92x.png)
+l. 4 Writing main.idv[94] (main93x.png)
+ [45]
+l. 4 Writing main.idv[95] (main94x.png)
+l. 4 Writing main.idv[96] (main95x.png)
+ [46
+
+]
+l. 21 Writing main.idv[97] (main96x.png)
+l. 21 Writing main.idv[98] (main97x.png)
+
+[47
+
+])
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 ...lizada a matriz correlograma\footnotemark~
+                                                  da figura \ref{fig: matriz...
+
+? 
+--- file main8.html ---
+l. 46 Writing main.idv[99] (main98x.png)
+l. 46 Writing main.idv[100] (main99x.png)
+[48
+
+
+]
+l. 46 Writing main.idv[101] (main100x.png)
+l. 46 Writing main.idv[102] (main101x.png)
+ [49]
+l. 46 Writing main.idv[103] (main102x.png)
+l. 46 Writing main.idv[104] (main103x.png)
+ [50
+
+]
+
+! LaTeX Error: File `../../graficos/latex-graph-matriz-correlacao' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...../graficos/latex-graph-matriz-correlacao}
+                                                  
+? 
+l. 51 Writing main.idv[105] (main104x.png)
+l. 51 Writing main.idv[106] (main105x.png)
+[51
+
+]
+l. 57 Writing main.idv[107] (main106x.png)
+l. 57 Writing main.idv[108] (main107x.png)
+ [52
+
+]
+l. 57 Writing main.idv[109] (main108x.png)
+l. 57 Writing main.idv[110] (main109x.png)
+ [53
+
+]
+l.59 --- TeX4ht warning --- File `"../../graficos/latex-graph-matriz-correlacao
+2.xbb"' not found ---
+l.59 --- TeX4ht warning --- Cannot determine size of graphic in "../../graficos
+/latex-graph-matriz-correlacao2.xbb" (no BoundingBox) ---
+l. 59 --- needs --- ../../graficos/latex-graph-matriz-correlacao2-.png ---
+l. 62 Writing main.idv[111] (main110x.png)
+l. 62 Writing main.idv[112] (main111x.png)
+[54
+
+]
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...-se da tela do \lstinline{shiny}\footnote{
+                                                  Facilitador de visualizaç...
+
+? 
+--- file main9.html ---
+
+! LaTeX Error: No counter 'Hfootnote' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...tter-plot} com combinações\footnotemark~
+                                                   de variáveis obtidas pel...
+
+? 
+--- file main10.html ---
+l. 70 Writing main.idv[113] (main112x.png)
+l. 70 Writing main.idv[114] (main113x.png)
+[55
 
 
 
 ]
-<../pre-text/ficha-catalografica.pdf, id=36, 597.51233pt x 845.0471pt>
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf  used on input lin
-e 27.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf  used on input lin
-e 27.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<../pre-text/ficha-catalografica.pdf, id=39, page=1, 597.51233pt x 845.0471pt>
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf , page1 used on in
-put line 27.
-(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf , page1 used on in
-put line 27.
-(pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf , page1 used on in
-put line 27.
-(pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf , page1 used on in
-put line 27.
-(pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
-File: ../pre-text/ficha-catalografica.pdf Graphic file (type pdf)
-<use ../pre-text/ficha-catalografica.pdf, page 1>
-Package pdftex.def Info: ../pre-text/ficha-catalografica.pdf , page1 used on in
-put line 27.
-(pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
- [2
+l. 70 Writing main.idv[115] (main114x.png)
+l. 70 Writing main.idv[116] (main115x.png)
+ [56
 
- <../pre-text/ficha-catalografica.pdf>] [3] [4]
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.lof
-Overfull \hbox (6.95354pt too wide) in paragraph at lines 10--10
- [][] [][][]\OT1/cmr/m/n/12 Crit^^Serio de sele^^Xc~ao dos fa-to-res: a par-tir
- do 5$[]$ fa-tor, observa-se uma tend^encia 
- []
+]
+l.72 --- TeX4ht warning --- File `"../../graficos/latex-graph-pairs.xbb"' not f
+ound ---
+l.72 --- TeX4ht warning --- Cannot determine size of graphic in "../../graficos
+/latex-graph-pairs.xbb" (no BoundingBox) ---
+l. 72 --- needs --- ../../graficos/latex-graph-pairs.png ---
+l. 75 Writing main.idv[117] (main116x.png)
+l. 75 Writing main.idv[118] (main117x.png)
+[57
 
-) [5] (/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.lot)
-[6
+]
 
-] (/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.toc)
-[7
+! LaTeX Error: No counter 'Hfootnote' defined.
 
-] (../sections/resumo.tex [8
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...oma dos \textit{eigenvectors\footnotemark}
+                                                  , que é o total de variá...
 
-]) (../sections/lista-abreviaturas.tex [9]
-[10]) [11] (../sections/introducao.tex [12] [13] [14] [15]) [16]
-(../sections/avaliacao-brasil.tex [17] [18] [19] [20] [21])
-(../sections/avaliacao-mundo.tex) (../sections/metodologia.tex [22] [23]
-(../sections/eda.tex [24] [25]
-Overfull \hbox (0.25093pt too wide) in paragraph at lines 29--31
-[]\OT1/cmr/bx/n/12 Categoria Ad-mi-nis-tra-tiva\OT1/cmr/m/n/12 : en-qua-dra-men
-to or-ga-ni-za-ci-o-nal da IES em 10 (dez) n^^S^^Pveis: 
- []
+? 
+--- file main11.html ---
+l. 93 Writing main.idv[119] (main118x.png)
+l. 93 Writing main.idv[120] (main119x.png)
+[58
 
-[26]
-Overfull \hbox (3.13498pt too wide) in paragraph at lines 53--54
-[]\OT1/cmr/bx/n/12 Nota Pa-dro-ni-zada - Opor-tu-ni-da-des de Am-plia^^Xc~ao da
- Forma^^Xc~ao\OT1/cmr/m/n/12 : Real, cont^^S^^Pnua.
- []
+]
+l. 93 Writing main.idv[121] (main120x.png)
+l. 103 Writing main.idv[122] (main121x.png)
+l. 108 Writing main.idv[123] (main122x.png)
+l. 108 Writing main.idv[124] (main123x.png)
+ [59]
+l. 148 Writing main.idv[125] (main124x.png)
+l. 148 Writing main.idv[126] (main125x.png)
+ [60]
+l. 153 Writing main.idv[127] (main126x.png)
+l. 153 Writing main.idv[128] (main127x.png)
+ [61]
+l. 153 Writing main.idv[129] (main128x.png)
+l. 153 Writing main.idv[130] (main129x.png)
+ [62
 
-[27] [28] (../../tabelas/latex-tbl-cursos-por-regiao.tex) [29]
-<../../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf, id=431, 505.89pt 
-x 361.35pt>
-File: ../../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf Graphic file 
-(type pdf)
-<use ../../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-percent-de-cursos-p-org-aca
-d.pdf  used on input line 88.
-(pdftex.def)             Requested size: 455.29678pt x 325.21199pt.
- [30 <../../graficos/latex-graph-percent-de-cursos-p-org-acad.pdf>]
-<../../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf, id=443, 505.89pt x
- 361.35pt>
-File: ../../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf Graphic file (
-type pdf)
-<use ../../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-percent-de-cursos-p-cat-adm
-.pdf  used on input line 96.
-(pdftex.def)             Requested size: 455.29678pt x 325.21199pt.
+]
+l.155 --- TeX4ht warning --- File `"../../graficos/latex-graph-scree-plot-pca.x
+bb"' not found ---
+l.155 --- TeX4ht warning --- Cannot determine size of graphic in "../../grafico
+s/latex-graph-scree-plot-pca.xbb" (no BoundingBox) ---
+l. 155 --- needs --- ../../graficos/latex-graph-scree-plot-pca-.png ---
+l. 158 Writing main.idv[131] (main130x.png)
+l. 158 Writing main.idv[132] (main131x.png)
+[63
 
-(../../tabelas/latex-tbl-ies-p-cat-adm.tex)
-<../../graficos/latex-graph-cursos-com-conceito.pdf, id=447, 505.89pt x 361.35p
-t>
-File: ../../graficos/latex-graph-cursos-com-conceito.pdf Graphic file (type pdf
-)
-<use ../../graficos/latex-graph-cursos-com-conceito.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-cursos-com-conceito.pdf  us
-ed on input line 109.
-(pdftex.def)             Requested size: 379.41655pt x 271.01184pt.
- [31 <../../graficos/latex-graph-percent-de-cursos-p-cat-adm.pdf>] (../../tabel
-as/latex-tbl-cursos-com-conceito.tex) [32 <../../graficos/latex-graph-cursos-co
-m-conceito.pdf>]
-(../../tabelas/latex-tbl-sumario-estatistico-com-knn.tex) [33] [34])
-(../sections/pca.tex [35] (../../tabelas/latex-tbl-vars-padronizadas-inep.tex)
-[36]
-<../../graficos/latex-graph-matriz-correlacao.pdf, id=524, 505.89pt x 361.35pt>
+] (../../tabelas/latex-tbl-caracteristicas-dos-componentes.tex
+l. 3 Writing main.idv[133] (main132x.png)
+l. 3 Writing main.idv[134] (main133x.png)
+ [64
 
-File: ../../graficos/latex-graph-matriz-correlacao.pdf Graphic file (type pdf)
-<use ../../graficos/latex-graph-matriz-correlacao.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-matriz-correlacao.pdf  used
- on input line 48.
-(pdftex.def)             Requested size: 379.41655pt x 271.01184pt.
-<../../graficos/latex-graph-matriz-correlacao2.pdf, id=526, 505.89pt x 361.35pt
->
-File: ../../graficos/latex-graph-matriz-correlacao2.pdf Graphic file (type pdf)
+]
+l. 3 Writing main.idv[135] (main134x.png)
+l. 3 Writing main.idv[136] (main135x.png)
+ [65
 
-<use ../../graficos/latex-graph-matriz-correlacao2.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-matriz-correlacao2.pdf  use
-d on input line 59.
-(pdftex.def)             Requested size: 379.41655pt x 271.01184pt.
- [37 <../../graficos/latex-graph-matriz-correlacao.pdf>]
-Overfull \hbox (7.1075pt too wide) in paragraph at lines 64--66
-[]\OT1/cmr/m/n/12 Uma vi-su-a-liza^^Xc~ao al-ter-na-tiva das cor-rela^^Xc~oes p
-ode ser ob-tida por meio da fun^^Xc~ao [][][]
- []
+]
+l. 34 Writing main.idv[137] (main136x.png)
+l. 34 Writing main.idv[138] (main137x.png)
 
-<../../graficos/latex-graph-pairs.png, id=547, 481.8pt x 481.8pt>
-File: ../../graficos/latex-graph-pairs.png Graphic file (type png)
-<use ../../graficos/latex-graph-pairs.png>
-Package pdftex.def Info: ../../graficos/latex-graph-pairs.png  used on input li
-ne 72.
-(pdftex.def)             Requested size: 385.4405pt x 385.4405pt.
-[38 <../../graficos/latex-graph-matriz-correlacao2.pdf>] [39 <../../graficos/la
-tex-graph-pairs.png (PNG copy)>] [40]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 108.
- [41]
-<../../graficos/latex-graph-scree-plot-pca.pdf, id=622, 505.89pt x 361.35pt>
-File: ../../graficos/latex-graph-scree-plot-pca.pdf Graphic file (type pdf)
-<use ../../graficos/latex-graph-scree-plot-pca.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-scree-plot-pca.pdf  used on
- input line 155.
-(pdftex.def)             Requested size: 404.71254pt x 289.0804pt.
- [42]
-(../../tabelas/latex-tbl-caracteristicas-dos-componentes.tex) [43 <../../grafic
-os/latex-graph-scree-plot-pca.pdf>] (../../tabelas/latex-tbl-loadings-mq-5.tex)
-[44] [45]) (../sections/fa.tex [46]
-File: ../../graficos/latex-graph-matriz-correlacao.pdf Graphic file (type pdf)
-<use ../../graficos/latex-graph-matriz-correlacao.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-matriz-correlacao.pdf  used
- on input line 16.
-(pdftex.def)             Requested size: 379.41655pt x 271.01184pt.
- [47] [48] [49]
-<../../graficos/latex-graph-fa-scree-plot.pdf, id=733, 505.89pt x 361.35pt>
-File: ../../graficos/latex-graph-fa-scree-plot.pdf Graphic file (type pdf)
-<use ../../graficos/latex-graph-fa-scree-plot.pdf>
-Package pdftex.def Info: ../../graficos/latex-graph-fa-scree-plot.pdf  used on 
-input line 82.
-(pdftex.def)             Requested size: 379.41655pt x 271.01184pt.
- [50 <../../graficos/latex-graph-fa-scree-plot.pdf>] [51]) [52]) (../sections/r
-esultados.tex [53]) [54]
-(../sections/conclusao.tex [55]) [56]
-(/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.bbl
+[66
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 3.
+]) (../../tabelas/latex-tbl-loadings-mq-5.tex
+l. 3 Writing main.idv[139] (main138x.png)
+l. 3 Writing main.idv[140] (main139x.png)
+ [67
 
+]
+l. 3 Writing main.idv[141] (main140x.png)
+l. 3 Writing main.idv[142] (main141x.png)
+ [68
+
+]
+l. 34 Writing main.idv[143] (main142x.png)
+l. 34 Writing main.idv[144] (main143x.png)
+ [69
+
+]))
+(../sections/fa.tex
+l. 5 Writing main.idv[145] (main144x.png)
+l. 5 Writing main.idv[146] (main145x.png)
+ [70
+
+]
+l. 14 Writing main.idv[147] (main146x.png)
+l. 14 Writing main.idv[148] (main147x.png)
+ [71]
+l. 14 Writing main.idv[149] (main148x.png)
+l. 14 Writing main.idv[150] (main149x.png)
+ [72
+
+]
+
+! LaTeX Error: File `../../graficos/latex-graph-matriz-correlacao' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...../graficos/latex-graph-matriz-correlacao}
+                                                  
+? 
+l. 19 Writing main.idv[151] (main150x.png)
+l. 19 Writing main.idv[152] (main151x.png)
+[73
+
+]
+l. 23 Writing main.idv[153] (main152x.png)
+l. 23 Writing main.idv[154] (main153x.png)
+ [74
+
+]
+l. 74 Writing main.idv[155] (main154x.png)
+l. 74 Writing main.idv[156] (main155x.png)
+ [75]
+l. 79 Writing main.idv[157] (main156x.png)
+l. 79 Writing main.idv[158] (main157x.png)
+ [76]
+l. 80 Writing main.idv[159] (main158x.png)
+l. 80 Writing main.idv[160] (main159x.png)
+ [77]
+l. 80 Writing main.idv[161] (main160x.png)
+l. 80 Writing main.idv[162] (main161x.png)
+ [78
+
+]
+l.82 --- TeX4ht warning --- File `"../../graficos/latex-graph-fa-scree-plot.xbb
+"' not found ---
+l.82 --- TeX4ht warning --- Cannot determine size of graphic in "../../graficos
+/latex-graph-fa-scree-plot.xbb" (no BoundingBox) ---
+l. 82 --- needs --- ../../graficos/latex-graph-fa-scree-plot-.png ---
+l. 85 Writing main.idv[163] (main162x.png)
+l. 85 Writing main.idv[164] (main163x.png)
+[79
+
+])
+l. 23 Writing main.idv[165] (main164x.png)
+l. 23 Writing main.idv[166] (main165x.png)
+ [80
+
+]) (../sections/resultados.tex
+l. 23 Writing main.idv[167] (main166x.png)
+l. 23 Writing main.idv[168] (main167x.png)
+ [81])
+l. 50 Writing main.idv[169] (main168x.png)
+l. 50 Writing main.idv[170] (main169x.png)
+ [82] (../sections/conclusao.tex
+l. 18 Writing main.idv[171] (main170x.png)
+l. 18 Writing main.idv[172] (main171x.png)
+
+[83])
+l. 54 Writing main.idv[173] (main172x.png)
+l. 54 Writing main.idv[174] (main173x.png)
+ [84] (./main.bbl
 bibitemlist
-[57]) 
+l. 56 Writing main.idv[175] (main174x.png)
+l. 56 Writing main.idv[176] (main175x.png)
+[85]
+l. 113 Writing main.idv[177] (main176x.png)
+l. 113 Writing main.idv[178] (main177x.png)
+ [86]) 
 AED: lastpage setting LastPage
-[58]
-\tf@lof=\write5
-\openout5 = `main.lof'.
+l. 56 Writing main.idv[179] (main178x.png)
+l. 56 Writing main.idv[180] (main179x.png)
+[87]
+l. 56 Writing main.idv[181] (main180x.png)
+l. 56 Writing main.idv[182] (main181x.png)
+ [88]
+l. 56 Writing main.idv[183] (main182x.png)
+l. 56 Writing main.idv[184] (main183x.png)
+ [89
 
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
-\tf@toc=\write7
-\openout7 = `main.toc'.
-
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
- (/home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
+l. 56 Writing main.idv[185] (main184x.png)
+l. 56 Writing main.idv[186] (main185x.png)
+ [90
+
+]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 56.
+\BKM@file=\write7
+\openout7 = `main.out.ps'.
+
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 56.
 
 
@@ -1700,67 +2638,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 26657 strings out of 492982
- 457906 string characters out of 6134896
- 732136 words of memory out of 5000000
- 29370 multiletter control sequences out of 15000+600000
- 14331 words of font info for 51 fonts, out of 8000000 for 9000
+ 30849 strings out of 492983
+ 512916 string characters out of 6134921
+ 874177 words of memory out of 5000000
+ 33611 multiletter control sequences out of 15000+600000
+ 12794 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,18n,54p,1408b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not ex
-ist, replaced by a fixed one
+ 69i,10n,63p,1868b,1444s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/guilherme/Drive/AdmUff_2013_2/TCC/Ariel/latex/main/main
-.pdf (59 pages, 638583 bytes).
-PDF statistics:
- 1070 PDF objects out of 1200 (max. 8388607)
- 954 compressed objects within 10 object streams
- 338 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Output written on main.dvi (91 pages, 471912 bytes).

@@ -1,0 +1,57 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Agradecimentos}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Agradecimentos}}{7}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{Lista de ilustra\c {c}\~{o}es}}{8}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Lista de tabelas}}{9}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Sum\'ario}}{10}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{Resumo}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-7}{Resumo}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-8}{}{Abstract}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-9}{Abstract}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-10}{}{Lista de abreviaturas e siglas}}{13}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-11}{Lista de abreviaturas e siglas}}{14}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-60001}{QQ2-1-12}{INTRODU\IeC {\c C}\IeC {\~A}O}}{17}\relax 
+\doTocEntry\tocsubsection{1.1}{\csname a:TocLink\endcsname{1}{x1-70001}{QQ2-1-13}{Motiva\IeC {\c c}\IeC {\~a}o}}{17}\relax 
+\doTocEntry\tocsubsection{1.2}{\csname a:TocLink\endcsname{1}{x1-80002}{QQ2-1-14}{Justificativa}}{19}\relax 
+\doTocEntry\tocsubsection{1.3}{\csname a:TocLink\endcsname{1}{x1-90003}{QQ2-1-15}{Estrutura do Trabalho}}{21}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-100002}{QQ2-1-16}{AVALIA\IeC {\c C}\IeC {\~A}O DO ENSINO SUPERIOR NO\\BRASIL}}{22}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-110001}{QQ2-1-17}{Breve panorama evolutivo das metodologias de avalia\IeC {\c c}\IeC {\~a}o}}{22}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-120002}{QQ2-1-18}{Dificuldades e necessidades em avaliar IES}}{25}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-130003}{QQ2-1-19}{AVALIA\IeC {\c C}\IeC {\~A}O DO ENSINO SUPERIOR NO\\MUNDO}}{28}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-140004}{QQ2-1-20}{METODOLOGIA}}{29}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-150001}{QQ2-1-21}{Classifica\IeC {\c c}\IeC {\~a}o da Pesquisa}}{29}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-160002}{QQ2-1-22}{Ferramenta e T\IeC {\'e}cnicas de an\IeC {\'a}lise de dados}}{30}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-170003}{QQ2-1-23}{An\IeC {\'a}lise Explorat\IeC {\'o}ria de dados}}{30}\relax 
+\doTocEntry\toclot{1}{\csname a:TocLink\endcsname{1}{x1-17062r1}{}{\ignorespaces Cursos por regi\IeC {\~a}o}}{table}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-17064r1}{}{\ignorespaces Percentual de cursos por organiza\IeC {\c c}\IeC {\~a}o acad\IeC {\^e}mica}}{figure}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-17066r2}{}{\ignorespaces Percentual de cursos por categoria administrativa}}{figure}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-17070r3}{}{\ignorespaces Cursos com conceito}}{figure}\relax 
+\doTocEntry\toclot{2}{\csname a:TocLink\endcsname{1}{x1-17071r2}{}{\ignorespaces Cursos com conceito}}{table}\relax 
+\doTocEntry\toclot{3}{\csname a:TocLink\endcsname{1}{x1-17074r3}{}{\ignorespaces Sumariza\IeC {\c c}\IeC {\~a}o da base de dados ap\IeC {\'o}s uso do m\IeC {\'e}todo $k$-NN: medidas estat\IeC {\'\i }sticas b\IeC {\'a}sicas}}{table}\relax 
+\doTocEntry\tocsubsection{4.4}{\csname a:TocLink\endcsname{1}{x1-180004}{QQ2-1-30}{An\IeC {\'a}lise do Componente Principal}}{43}\relax 
+\doTocEntry\tocsubsubsection{4.4.1}{\csname a:TocLink\endcsname{1}{x1-190001}{QQ2-1-31}{Padroniza\IeC {\c c}\IeC {\~a}o das vari\IeC {\'a}veis}}{43}\relax 
+\doTocEntry\toclot{4}{\csname a:TocLink\endcsname{1}{x1-19004r4}{}{\ignorespaces Estat\IeC {\'\i }sticas sobre as vari\IeC {\'a}veis padronizadas pelo INEP}}{table}\relax 
+\doTocEntry\tocsubsubsection{4.4.2}{\csname a:TocLink\endcsname{1}{x1-200002}{QQ2-1-33}{Matriz de correla\IeC {\c c}\IeC {\~a}o das vari\IeC {\'a}veis preditoras}}{48}\relax 
+\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-20002r4}{}{\ignorespaces Matriz correlograma: correla\IeC {\c c}\IeC {\~a}o entre os pares de vari\IeC {\'a}veis segundo uma escala de cor.}}{figure}\relax 
+\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-20003r5}{}{\ignorespaces Matriz correlograma com as duas bandas}}{figure}\relax 
+\doTocEntry\toclof{6}{\csname a:TocLink\endcsname{1}{x1-20006r6}{}{\ignorespaces Matriz de pares de vari\IeC {\'a}veis}}{figure}\relax 
+\doTocEntry\tocsubsubsection{4.4.3}{\csname a:TocLink\endcsname{1}{x1-210003}{QQ2-1-37}{Aplica\IeC {\c c}\IeC {\~a}o da An\IeC {\'a}lise do Componente Principal}}{58}\relax 
+\doTocEntry\tocsubsubsection{4.4.4}{\csname a:TocLink\endcsname{1}{x1-220004}{QQ2-1-38}{Componentes Principais}}{58}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-22006}{}{\numberline {1}Computa\IeC {\protect \c c}\IeC {\protect \~a}o dos carregamentos da An\IeC {\protect \'a}lise do Componente Principal}}{60}\relax 
+\doTocEntry\tocsubsubsection{4.4.5}{\csname a:TocLink\endcsname{1}{x1-230005}{QQ2-1-40}{Sele\IeC {\c c}\IeC {\~a}o dos Componentes}}{60}\relax 
+\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-23001r7}{}{\ignorespaces Crit\IeC {\'e}rio de sele\IeC {\c c}\IeC {\~a}o dos componentes: a partir do 5\IeC {\textordmasculine } componente, observa-se redu\IeC {\c c}\IeC {\~a}o no decaimento da variabilidade, o que diminui a import\IeC {\^a}ncia do componente para uma poss\IeC {\'\i }vel sele\IeC {\c c}\IeC {\~a}o.}}{figure}\relax 
+\doTocEntry\tocsubsubsection{4.4.6}{\csname a:TocLink\endcsname{1}{x1-240006}{QQ2-1-42}{Caracter\IeC {\'\i }sticas dos Componentes}}{64}\relax 
+\doTocEntry\toclot{5}{\csname a:TocLink\endcsname{1}{x1-24001r5}{}{\ignorespaces Caracter\IeC {\'\i }sticas dos Componentes}}{table}\relax 
+\doTocEntry\toclot{6}{\csname a:TocLink\endcsname{1}{x1-24002r6}{}{\ignorespaces Componentes com magnitudes $\pm .50$}}{table}\relax 
+\doTocEntry\tocsubsection{4.5}{\csname a:TocLink\endcsname{1}{x1-250005}{QQ2-1-45}{An\IeC {\'a}lise do Fator}}{71}\relax 
+\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-25001r8}{}{\ignorespaces Matriz correlograma}}{figure}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-25003}{}{\numberline {2}Teste de Esfericidade de Bartlett}}{75}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-25011}{}{\numberline {3}Carregamentos da AF: o primeiro fator demonstra similaridade com o primeiro componente da ACP o que confirma a solidez e consist\IeC {\protect \^e}ncia das constata\IeC {\protect \c c}\IeC {\protect \~o}es at\IeC {\protect \'e} aqui verificadas.}}{75}\relax 
+\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-25048r9}{}{\ignorespaces Crit\IeC {\'e}rio de sele\IeC {\c c}\IeC {\~a}o dos fatores: a partir do 5\IeC {\textordmasculine } fator, observa-se uma tend\IeC {\^e}ncia de horizontaliza\IeC {\c c}\IeC {\~a}o da curva de variabilidade explicada pelos fatores, o que torna os fatores a partir desta contagem menos suscet\IeC {\'\i }veis em participar de uma sele\IeC {\c c}\IeC {\~a}o.}}{figure}\relax 
+\doTocEntry\tocsubsubsection{4.5.1}{\csname a:TocLink\endcsname{1}{x1-260001}{QQ2-1-50}{Rota\IeC {\c c}\IeC {\~a}o dos Fatores}}{80}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-26002}{}{\numberline {4}Carregamentos da AF ap\IeC {\protect \'o}s rota\IeC {\protect \c c}\IeC {\protect \~a}o}}{80}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-270005}{QQ2-1-52}{RESULTADOS}}{81}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-280006}{QQ2-1-53}{CONCLUS\IeC {\~A}O}}{83}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-290006}{QQ2-1-54}{Refer\^encias}}{85}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-55}{}{\uppercase {Refer\^encias}}}{85}\relax 
+\par 
