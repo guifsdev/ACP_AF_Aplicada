@@ -1,6 +1,6 @@
 ### Minha Monografia
-Esta repositório contém a minha monografia apresentada ao curso de Administração da Universidade Federal Fluminense como 
-requisito para obtenção do grau de bacharel.
+Este repositório contém a minha monografia apresentada ao curso de Administração da Universidade Federal Fluminense como 
+requisito para obtenção do grau de bacharel. Seu título é: Variáveis determinantes para formação do conceito preliminar de curso nas avaliações do Enade.
 
 ### Objeto de estudo
 Nesta trabalho analisei dados do Enade 2015 disponibilizados publicamente pelo INEP. O objetivo foi identificar quais são 
@@ -34,3 +34,7 @@ Se seu objetivo é copiar algo daqui, eu não dou a mínima. Mas tenha certeza q
 ### Texto
 O texto completo pode ser conseguido em [ResearchGate](https://www.researchgate.net/publication/326389471_Variaveis_determinantes_para_formacao_do_conceito_preliminar_de_curso_nas_avaliacoes_do_Enade). Você tem liberdade
 para sugerir qualquer edição ou incremento. Fique a vontade para entrar em contato comigo em <guilherme_santos@id.uff.br>.
+
+### Agradecimentos
+Especiais agradecimentos ao meu orientador [Ariel Levy](https://github.com/alevy59) por toda paciência e sabedoria sem os quais
+este trabalho não seria possível.
